@@ -1,0 +1,86 @@
+/*Estilos para el menu*/
+.Container_Navbar button{
+    color: #fff;
+}
+
+.Container_Navbar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+}
+
+.Listado_Navbar{
+    list-style: none;
+    margin-right: 45px;
+}
+
+.Listado_Navbar li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 8vw;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Listado_Navbar li{
+    transition: transform 0.3s ease;
+}
+
+.Listado_Navbar li:hover{
+    color: #c1c1c1c7;
+    transform: translateX(15px);
+    transition: all .5s;
+}
+
+/*Estilos para las redes sociales*/
+.NavbarSocial{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    margin-left: 20px;
+}
+
+.Social_Img{
+    display: flex;
+    list-style: none;
+}
+
+.Social_Img li{
+    padding-top: 15px;
+    padding-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.Social_Img li:hover{
+    transform: translateY(10px);
+    transition: all .5s;
+}
+
+/*Estilos para el copyright*/
+.NavbarFooter{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Responsive*/
+@media (max-width: 550px){
+    .Listado_Navbar li a{
+        font-size: 13vw;
+        text-align: center;
+    }
+
+    .NavbarImg{
+        position: absolute;
+        right: 15%;
+        top: 5%;
+    }
+
+    .NavbarFooter{
+        bottom: 3%;
+        right: 5%;
+    }
+}

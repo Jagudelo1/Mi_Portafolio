@@ -1,0 +1,100 @@
+.ContainerAbout{
+    overflow: hidden;
+}
+
+/* Estilos del Avatar */
+.Avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.Avatar img{
+    width: 200px;
+    background-color: #fff;
+    border-radius: 200px;
+    box-shadow: 0 5px 5px 0 #454242;
+}
+
+/* Estilos del Logo */
+.Logo{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.Logo img{
+    width: 70px;
+}
+
+/* Estilos del Titulo */
+.AboutText{
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.AboutText h2{
+    font-weight: 700;
+}
+
+/* Estilos de la información */
+.AboutMe{
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    width: 60%;
+    height: 35vh;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    overflow: auto;
+}
+
+/* Estilo de la barra de scroll */
+.AboutMe::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.AboutMe::-webkit-scrollbar-track { 
+  background-color: #fff;
+}
+  
+.AboutMe::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.AboutMe p{
+    color: white;
+    padding: 35px 35px 0 35px;
+    text-align: justify;
+}
+
+.Menu{
+    position: absolute;
+    bottom: 6%;
+    left: 5%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.Menu:hover{
+    color: #757575;
+}
+
+@media (max-width: 768px){
+    .Avatar{
+        padding-top: 100px;
+    }
+
+    .Avatar img{
+        width: 140px;
+    }
+    
+    .AboutMe{
+        height: 39vh;
+        width: 90%;
+    }
+}
