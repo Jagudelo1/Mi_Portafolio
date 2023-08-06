@@ -31,17 +31,17 @@ export function NavbarProyects () {
                                         </Nav.Link>
                                         <Nav.Link>
                                             <Link to='/Proyectos/BonAppetit' 
-                                            className="Link">
-                                            BonAppetit
-                                        </Link>
-                                    </Nav.Link>
-                                    <Nav.Link>
-                                        <Link to='/Proyectos/PelisBro' 
-                                            className="Link">
-                                            PelisBros
-                                        </Link>
-                                    </Nav.Link>
-                                </Nav>
+                                                className="Link">
+                                                BonAppetit
+                                            </Link>
+                                        </Nav.Link>
+                                        <Nav.Link>
+                                            <Link to='/Proyectos/PelisBro' 
+                                                className="Link">
+                                                PelisBros
+                                            </Link>
+                                        </Nav.Link>
+                                    </Nav>
                             </Navbar.Collapse>
                     </Container>
                 </Navbar>
