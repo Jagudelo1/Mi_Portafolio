@@ -1,15 +1,16 @@
-/*Estilos para el menu*/
-.Container_Navbar button{
-    color: #fff;
-}
-
+/*---------- Estilos del Contenedor del Menu de Navegacion y del Boton ----------*/
 .Container_Navbar{
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 100vh;
+    height: 93vh;
 }
 
+.Container_Navbar button{
+    color: #fff;
+}
+
+/*---------- Estilos del Listado del Menu de Navegacion ----------*/
 .Listado_Navbar{
     list-style: none;
     margin-right: 45px;
@@ -28,12 +29,15 @@
 }
 
 .Listado_Navbar li:hover{
-    color: #c1c1c1c7;
     transform: translateX(15px);
     transition: all .5s;
 }
 
-/*Estilos para las redes sociales*/
+.Listado_Navbar li a:hover{
+    color: #c1c1c1c7;
+}
+
+/*---------- Estilos de los iconos de redes sociales del Componente de MisRedes.jsx ----------*/
 .NavbarSocial{
     position: absolute;
     top: 2%;
@@ -57,28 +61,14 @@
     transition: all .5s;
 }
 
-/*Estilos para el copyright*/
-.NavbarFooter{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/*Responsive*/
+/*---------- Estilos Responsives del Listado, la Imagen del menu de Navegacion y el Footer ----------*/
 @media (max-width: 550px){
     .Listado_Navbar li a{
         font-size: 13vw;
         text-align: center;
     }
 
-    .NavbarImg{
-        position: absolute;
-        right: 15%;
-        top: 5%;
-    }
-
+    /*---------- Componente de Copy.jsx ----------*/
     .NavbarFooter{
         bottom: 3%;
         right: 5%;

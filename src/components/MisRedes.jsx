@@ -3,7 +3,7 @@ import '../css/NavbarApp.css';
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { MdOutgoingMail  } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 
 export function MisRedes () {
     return(

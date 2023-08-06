@@ -1,0 +1,18 @@
+/*---------- Estilos de Titulo Principal ----------*/
+.TitleProyect{
+    display: grid;
+    place-content: center;
+    padding-top: 50px;
+}
+
+.TitleProyect h1{
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+@media (max-width: 650px){
+    .TitleProyect{
+        padding-top: 110px;
+    }
+}

@@ -3,7 +3,7 @@ import '../css/NavbarApp.css';
 import '../css/main.css';
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
-import { CopyR } from "./CopyR";
+import { FooterApp } from "./FooterApp";
 import { MisRedes } from "./MisRedes";
 
 export function NavbarApp() {
@@ -32,7 +32,7 @@ export function NavbarApp() {
                     </nav>
                 </div>
                 <MisRedes/>
-                <CopyR/>
+                <FooterApp/>
             </Fade>
         </div>
     )

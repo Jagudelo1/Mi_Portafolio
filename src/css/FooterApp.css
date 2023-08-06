@@ -1,0 +1,47 @@
+/*---------- Estilos para el Contenedor Principal del Footer ----------*/
+.FooterContainer {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/*---------- Estilos para el Contenedor Izquierdo del Footer ----------*/
+.LeftFooter{
+    margin-left: 30px;
+    transition: transform 0.5s ease;
+}
+
+.LeftFooter .Menu{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    background-color: blueviolet;
+    padding: 10px 12px 11px;
+    border-radius: 15px;
+
+}
+
+.LeftFooter:hover{
+    transform: translateY(-10px);
+    transition: all .5s;
+}
+
+.LeftFooter .Menu:hover{
+    color: #c4c4c4;
+    background-color: rgb(119, 8, 222);
+    transition: all .5s;
+}
+
+/*---------- Estilos para el Contenedor Derecho del Footer ----------*/
+.RightFooter{
+    margin-right: 30px;
+}
+
+.RightFooter .NavbarFooter{
+    color: #fff;
+    font-weight: 600;
+}

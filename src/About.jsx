@@ -4,10 +4,9 @@ import './css/Loading.css';
 import Foto from './assets/Foto.png'
 import Logo from './assets/MiLogo.gif'
 import { Link } from "react-router-dom";
-import { CopyR } from "./components/CopyR";
 import { MisRedes } from "./components/MisRedes";
 import { Fade, Flip, Zoom } from "react-awesome-reveal";
-import { LinkMenu } from "./components/LinkMenu";
+import { FooterApp } from "./components/FooterApp";
 
 export function About () {
     return(
@@ -16,6 +15,7 @@ export function About () {
                 <div className="Avatar">
                     <img src={Foto} alt="" />
                 </div>
+                <MisRedes/>
                 <Zoom className="Logo">
                     <Link to="/">
                         <img src={Logo} alt="" />
@@ -39,9 +39,7 @@ export function About () {
                         </p>
                     </div>
                 </Fade>
-                <MisRedes/>
-                <LinkMenu/>
-                <CopyR/>
+                <FooterApp/>
             </div>
         </>
     )

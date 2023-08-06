@@ -1,8 +1,9 @@
+/*---------- Estilo para el Contenedor Principal del About ----------*/
 .ContainerAbout{
     overflow: hidden;
 }
 
-/* Estilos del Avatar */
+/*---------- Estilos de mi Avatar personalizado ----------*/
 .Avatar{
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@
     box-shadow: 0 5px 5px 0 #454242;
 }
 
-/* Estilos del Logo */
+/*---------- Estilos de mi Logo personalizado ----------*/
 .Logo{
     position: absolute;
     top: 3%;
@@ -28,7 +29,7 @@
     width: 70px;
 }
 
-/* Estilos del Titulo */
+/*---------- Estilos de Titulo Sobre Mi ----------*/
 .AboutText{
     text-align: center;
     margin-top: 15px;
@@ -40,7 +41,7 @@
     font-weight: 700;
 }
 
-/* Estilos de la información */
+/*---------- Estilos de Descripción principal Sobre Mi ----------*/
 .AboutMe{
     display: block;
     margin: 0 auto;
@@ -50,9 +51,9 @@
     border: 1px solid #ccc;
     border-radius: 20px 0 0 20px;
     overflow: auto;
+    margin-bottom: 95px;
 }
 
-/* Estilo de la barra de scroll */
 .AboutMe::-webkit-scrollbar {
     width: 4px;
 }
@@ -71,19 +72,7 @@
     text-align: justify;
 }
 
-.Menu{
-    position: absolute;
-    bottom: 6%;
-    left: 5%;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.Menu:hover{
-    color: #757575;
-}
-
+/*---------- Estilos Responsivos del Avatar personalizado y del texto Descriptivo ----------*/
 @media (max-width: 768px){
     .Avatar{
         padding-top: 100px;
