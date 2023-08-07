@@ -22,7 +22,6 @@
     background-color: blueviolet;
     padding: 10px 12px 11px;
     border-radius: 15px;
-
 }
 
 .LeftFooter:hover{
@@ -41,7 +40,7 @@
     margin-right: 30px;
 }
 
-.RightFooter .NavbarFooter{
+.RightFooter .CopyFooter{
     color: #fff;
     font-weight: 600;
 }

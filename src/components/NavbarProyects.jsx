@@ -21,27 +21,27 @@ export function NavbarProyects () {
                                             <FaReply size={20}/>
                                         </Link>
                                     </Nav.Link>
-                                    </Nav>
-                                    <Nav className="m-auto">
-                                        <Nav.Link>
-                                            <Link to='/Proyectos/Api_StarWars' 
-                                                className="Link">
-                                                Api StarWars
-                                            </Link>
-                                        </Nav.Link>
-                                        <Nav.Link>
-                                            <Link to='/Proyectos/BonAppetit' 
-                                                className="Link">
-                                                BonAppetit
-                                            </Link>
-                                        </Nav.Link>
-                                        <Nav.Link>
-                                            <Link to='/Proyectos/PelisBro' 
-                                                className="Link">
-                                                PelisBros
-                                            </Link>
-                                        </Nav.Link>
-                                    </Nav>
+                                </Nav>
+                                <Nav className="ms-auto">
+                                    <Nav.Link activeClassName="active">
+                                        <Link to='/Proyectos/Api_StarWars' 
+                                            className="Link">
+                                            Api StarWars
+                                        </Link>
+                                    </Nav.Link>
+                                    <Nav.Link activeClassName="active">
+                                        <Link to='/Proyectos/BonAppetit' 
+                                            className="Link">
+                                            BonAppetit
+                                        </Link>
+                                    </Nav.Link>
+                                    <Nav.Link activeClassName="active">
+                                        <Link to='/Proyectos/PelisBro' 
+                                            className="Link">
+                                            PelisBros
+                                        </Link>
+                                    </Nav.Link>
+                                </Nav>
                             </Navbar.Collapse>
                     </Container>
                 </Navbar>

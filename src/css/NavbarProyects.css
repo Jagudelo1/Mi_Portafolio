@@ -1,14 +1,3 @@
-/*---------- Estilos para el Menu Link ----------*/
-.Link{
-    text-decoration: none !important;
-    color: #000 !important;
-    font-weight: 700 !important;
-}
-
-.Link:focus, .Link:hover{
-    color: #f90404 !important;
-}
-
 /*---------- Estilos del Retorno al inicio principal de Proyectos.jsx ----------*/
 .Return{
     color: #000;
@@ -16,6 +5,13 @@
 
 .Return:hover{
     color: #f90404;
+}
+
+/*---------- Estilos para el Menu Link ----------*/
+.Link{
+    text-decoration: none !important;
+    color: #000 !important;
+    font-weight: 700 !important;
 }
 
 /*---------- Estilos NavbarBootstrap ----------*/

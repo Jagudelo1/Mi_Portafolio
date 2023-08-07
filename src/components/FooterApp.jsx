@@ -11,7 +11,7 @@ export function FooterApp () {
                 </Link>
             </div>
             <div className="RightFooter">
-                <Fade className="NavbarFooter">
+                <Fade className="CopyFooter">
                     <p>@2023 Juan David Agudelo</p>
                 </Fade>
             </div>
