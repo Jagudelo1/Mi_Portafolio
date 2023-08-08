@@ -16,9 +16,9 @@
 
 /*---------- Estilos NavbarBootstrap ----------*/
 .NavbarXD{
-    background-color: #ddd !important;
-    margin-top: 20px;
-    height: 6vh;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #fff !important;
 }
 
 .navbar-toggler{

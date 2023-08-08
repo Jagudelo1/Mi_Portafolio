@@ -1,11 +1,12 @@
 import React from "react";
+import './css/Proyects.css';
 import Logo from './assets/MiLogo.gif';
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import { MisRedes } from './components/MisRedes';
-import { NavbarProyects } from "./components/NavbarProyects";
-import './css/Proyects.css';
+import { NavbarProyects } from './components/NavbarProyects';
 import { FooterApp } from "./components/FooterApp";
+import ApiReact from './assets/Api_StarWars/1.png';
 
 export function Proyects() {
     return(
@@ -16,10 +17,15 @@ export function Proyects() {
                 </Link>
             </Zoom>
             <MisRedes/>
-            <Fade className="TitleProyect">
-                <h1>Mis Proyectos 😉</h1>
-            </Fade>
             <NavbarProyects/>
+            <div>
+                <div>
+                    <img src={ApiReact} alt="Proyecto1" />
+                </div>
+                <p>En esta sección encontraras mis proyectos realizados personal
+                    y academicos
+                </p>
+            </div>
             <FooterApp/>
         </div>
     )
