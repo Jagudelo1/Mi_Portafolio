@@ -1,54 +1,10 @@
-/*---------- Estilos de Titulo Principal ----------*/
-.TitleProyect{
+/*----------> Estilos Del Contenedor de la Imagen <----------*/
+.ImageProyects{
     display: grid;
     place-content: center;
-    padding-top: 45px;
 }
 
-.TitleProyect h1{
-    color: #fff;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-@media (max-width: 650px){
-    .TitleProyect{
-        padding-top: 110px;
-    }
-}
-
-/*----------> Estilos Generales <----------*/
-
-/*---------- Estilos Del Contenedor de la Imagen ----------*/
-.ContainerImg{
-    display: grid;
-    place-content: center;
-    margin: 30px 0 30px 0;
-    padding: 0 50px;
-}
-
-.ContainerImg img{
-    width: 100%;
-}
-
-/*---------- Estilos del Titulo ----------*/
-.ContainerCarousel h1{
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-}
-
-.ContainerCarousel span{
-    color: red;
-}
-
-/*---------- Estilos del Contenido del Proyecto ----------*/
-.ContentProyect{
-    margin: 0 50px;
-    color: #fff;
-}
-
-.Content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.ImageProyects img{
+    width: 450px;
+    border-radius: 15px;
 }
