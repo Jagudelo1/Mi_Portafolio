@@ -91,22 +91,3 @@
         width: 121px !important;
     }
 }
-
-/* @media (max-width: 840px){
-    .DescriptionCard{
-        height: 95px;
-        overflow-y: auto;
-    }
-
-    .DescriptionCard::-webkit-scrollbar {
-        width: 4px;
-    }
-      
-    .DescriptionCard::-webkit-scrollbar-track { 
-      background-color: #fff;
-    }
-      
-    .DescriptionCard::-webkit-scrollbar-thumb {
-      background-color: #888;
-    }
-} */

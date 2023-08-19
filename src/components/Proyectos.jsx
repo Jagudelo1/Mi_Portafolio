@@ -6,15 +6,16 @@ import '../css/Proyectos.css';
 
 export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
+    const BonAppetit = "https://github.com/Jagudelo1/BonAppetit";
+    const PelisBro = "https://github.com/Jagudelo1/PelisBro";
 
     return(
         <div className='ContentProyects'>
             <Return/>
             <MisRedes/>
-            <h2>Te Presento Mis Proyectos</h2>
+            <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
             <div className="Proyects">
                 <div className="ContentDescription">
-                    <h2>Experiencia<hr/></h2>
                     <p>
                         A lo largo de mi experiencia como desarrollador, he 
                         abordado una variedad de proyectos que han abarcado 
@@ -39,21 +40,22 @@ export function Proyectos() {
                         dedicado al universo de Star Wars, 
                         que ofrece información sobre los personajes 
                         y planetas de esta legendaria saga."
+                        etiqueta1="" etiqueta2="" etiqueta3=""
                         github={ApiStarWars}
                     />
-                    <Cards title="Api_StarWars"
+                    <Cards title="BonAppetit"
                         description="Diseñé un sitio web 
                         dedicado al universo de Star Wars, 
                         que ofrece información sobre los personajes 
                         y planetas de esta legendaria saga."
-                        github={ApiStarWars}
+                        etiqueta1="" etiqueta2="" etiqueta3=""
+                        github={BonAppetit}
                     />
-                    <Cards title="Api_StarWars"
-                        description="Diseñé un sitio web 
-                        dedicado al universo de Star Wars, 
-                        que ofrece información sobre los personajes 
-                        y planetas de esta legendaria saga."
-                        github={ApiStarWars}
+                    <Cards title="PelisBro"
+                        description="Este proyecto aun se encuentra
+                        en desarrollo, muy pronto esta en linea y funcionando."
+                        etiqueta1="" etiqueta2="" etiqueta3=""
+                        github={PelisBro}
                     />
                 </div>
             </div>
