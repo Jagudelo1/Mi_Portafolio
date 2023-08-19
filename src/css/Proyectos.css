@@ -1,0 +1,17 @@
+.Proyects{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 40px;
+}
+
+@media (max-width: 1032px){
+    .Proyects{
+        grid-template-columns: auto !important;
+    }
+
+    .ContentCards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+        gap: 30px;
+    }
+}

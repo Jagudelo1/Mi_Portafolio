@@ -1,12 +1,11 @@
 import React from "react";
-import './css/About.css';
-import './css/Loading.css';
-import Foto from './assets/Foto.png'
-import Logo from './assets/MiLogo.gif'
+import '../css/About.css';
+import Foto from '../assets/Foto.png';
+import Logo from '../assets/MiLogo.gif';
 import { Link } from "react-router-dom";
-import { MisRedes } from "./components/MisRedes";
 import { Fade, Flip, Zoom } from "react-awesome-reveal";
-import { FooterApp } from "./components/FooterApp";
+import { MisRedes } from "./MisRedes/MisRedes";
+import { Footer } from "./Footer/Footer";
 
 export function About () {
     return(
@@ -39,7 +38,7 @@ export function About () {
                         </p>
                     </div>
                 </Fade>
-                <FooterApp/>
+                <Footer/>
             </div>
         </>
     )

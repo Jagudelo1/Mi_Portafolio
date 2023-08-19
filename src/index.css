@@ -1,0 +1,25 @@
+/*---------- Estilos de todo el cuerpo ----------*/
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: auto;
+  font-family: Roboto !important;
+}
+
+/*----> Estilos para la barra de desplazamiento <----*/
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track { 
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}

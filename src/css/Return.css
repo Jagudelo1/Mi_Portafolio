@@ -1,14 +1,15 @@
 .ReturnContainer{
     position: absolute;
     top: 5%;
-    left: 2%;
+    left: 5%;
 }
 
 .IconReturn{
-    transition: all .2s ease-in;
+    transition: all .5s ease-in;
 }
 
 .IconReturn:hover{
-    transition: all .2s ease-in;
+    transition: all .5s ease-in;
     color: rgb(163, 163, 163) !important;
+    transform: rotate(180deg);
 }

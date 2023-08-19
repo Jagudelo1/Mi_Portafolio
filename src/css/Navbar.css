@@ -37,30 +37,6 @@
     color: #c1c1c1c7;
 }
 
-/*---------- Estilos de los iconos de redes sociales del Componente de MisRedes.jsx ----------*/
-.NavbarSocial{
-    position: absolute;
-    top: 2%;
-    right: 3%;
-    margin-left: 20px;
-}
-
-.Social_Img{
-    display: flex;
-    list-style: none;
-}
-
-.Social_Img li{
-    padding-top: 15px;
-    padding-left: 15px;
-    transition: transform 0.3s ease;
-}
-
-.Social_Img li:hover{
-    transform: translateY(10px);
-    transition: all .5s;
-}
-
 /*---------- Estilos Responsives del Listado, la Imagen del menu de Navegacion y el Footer ----------*/
 @media (max-width: 550px){
     .Listado_Navbar li a{

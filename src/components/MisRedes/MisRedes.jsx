@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/NavbarApp.css';
+import '../../css/MisRedes.css';
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { MdOutgoingMail  } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -33,7 +33,7 @@ export function MisRedes () {
                 <li>
                     <Zoom>
                         <a href="mailto:juan.agudelo.aldana@gmail.com">
-                            <MdOutgoingMail size={35} color="red"/>
+                            <MdOutgoingMail size={35} color="blue"/>
                         </a>
                     </Zoom>
                 </li>
