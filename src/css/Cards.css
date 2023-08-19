@@ -6,7 +6,6 @@
     margin-bottom: 30px;
     margin-left: 25px;
     margin-right: 25px;
-    touch-action: manipulation !important;
 }
 
 /* <-------------------- Estilos para el Titulo de la Card --------------------> */
@@ -46,6 +45,7 @@
 /* <-------------------- Estilos para el boton que esta en el cuerpo del acordeon--------------------> */
 .accordion-body{
     padding: 0 !important;
+    padding-left: 9px !important;
 }
 
 .accordion-body button{
@@ -77,7 +77,7 @@
 }
 
 /* <-------------------- Estilos para Media Querys (Responsive) --------------------> */
-@media (max-width: 1032px){
+@media (max-width: 1126px){
     .ContainerCards{
         margin-bottom: 0;
     }
@@ -91,3 +91,22 @@
         width: 121px !important;
     }
 }
+
+/* @media (max-width: 840px){
+    .DescriptionCard{
+        height: 95px;
+        overflow-y: auto;
+    }
+
+    .DescriptionCard::-webkit-scrollbar {
+        width: 4px;
+    }
+      
+    .DescriptionCard::-webkit-scrollbar-track { 
+      background-color: #fff;
+    }
+      
+    .DescriptionCard::-webkit-scrollbar-thumb {
+      background-color: #888;
+    }
+} */

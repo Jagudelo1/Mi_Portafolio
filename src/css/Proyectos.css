@@ -4,7 +4,7 @@
     margin: 40px;
 }
 
-@media (max-width: 1032px){
+@media (max-width: 1126px){
     .Proyects{
         grid-template-columns: auto !important;
         margin: 0 !important;
@@ -12,7 +12,23 @@
 
     .ContentCards{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
-        gap: 30px;
+        grid-template-columns: auto auto;
+        grid-row-gap: 40px;
+    }
+}
+
+@media (max-width: 760px){
+    .ContentCards{
+        display: grid;
+        grid-template-columns: auto !important;
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media (max-width: 565px){
+    .ContentCards{
+        grid-template-columns: auto !important;
+        width: 100%;
     }
 }

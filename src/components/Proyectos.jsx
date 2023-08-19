@@ -40,7 +40,6 @@ export function Proyectos() {
                         que ofrece información sobre los personajes 
                         y planetas de esta legendaria saga."
                         github={ApiStarWars}
-                        className='Card1'
                     />
                     <Cards title="Api_StarWars"
                         description="Diseñé un sitio web 
