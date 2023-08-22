@@ -1,0 +1,26 @@
+.ContentModalHeader,
+.ContentModalBody,
+.ContentModalFooter{
+    background-color: #fff !important;
+}
+
+.ContentModalHeader .modal-title{
+    display: flex !important;
+}
+
+.ContentModalHeader .modal-title span{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: red;
+}
+
+.Content_MA .modal-header .btn-close{
+    margin: 0 !important;
+}
+
+.ContentModalFooter button{
+    background-color: red !important;
+    border: 0 !important;
+    font-weight: 600 !important;
+}

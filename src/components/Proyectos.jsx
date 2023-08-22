@@ -1,64 +1,74 @@
-import React from "react";
+import React from 'react';
+import '../css/Proyectos.css';
 import { Return } from './Return/Return';
 import { MisRedes } from "./MisRedes/MisRedes";
 import { Cards } from "./Cards/Cards";
-import '../css/Proyectos.css';
+{/*Imagenes del Primer Proyecto*/}
+import Foto1S from '../assets/Api_StarWars/1.png';
+import Foto2S from '../assets/Api_StarWars/2.png';
+import Foto3S from '../assets/Api_StarWars/3.png';
+import Foto4S from '../assets/Api_StarWars/4.png';
+{/*Imagenes del Segundo Proyecto*/}
+import Foto1B from '../assets/BonAppetit/1.jpeg';
+import Foto2B from '../assets/BonAppetit/2.jpeg';
+import Foto3B from '../assets/BonAppetit/3.jpeg';
+import Foto4B from '../assets/BonAppetit/4.jpeg';
+import { AlertModal } from './AlertModal/AlertModal';
 
 export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
     const BonAppetit = "https://github.com/Jagudelo1/BonAppetit";
-    const PelisBro = "https://github.com/Jagudelo1/PelisBro";
+    // const PelisBro = "https://github.com/Jagudelo1/PelisBro";
 
     return(
-        <div className='ContentProyects'>
-            <Return/>
-            <MisRedes/>
-            <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
-            <div className="Proyects">
-                <div className="ContentDescription">
-                    <p>
-                        A lo largo de mi experiencia como desarrollador, he 
-                        abordado una variedad de proyectos que han abarcado 
-                        diversas tecnologías y enfoques. Algunos de estos 
-                        proyectos se basaron en HTML5, CSS3 y JavaScript, 
-                        demostrando mi capacidad para crear interfaces atractivas 
-                        con interacciones dinámicas. <br/><br/> Otros proyectos involucraron 
-                        la integración de PHP junto con estas tecnologías, permitiéndome 
-                        construir aplicaciones web más robustas que abarcan tanto la 
-                        lógica del servidor como la interacción del cliente. Además, 
-                        incursioné en el ecosistema de React, en estos proyectos utilizando 
-                        tanto React-Bootstrap como la biblioteca Bootstrap estándar, lo que me 
-                        permitió crear experiencias de usuario fluidas y visualmente 
-                        atractivas en proyectos interactivos. <br/><br/>Mi enfoque continuo es 
-                        abrazar nuevos desafíos y expandir mi expertise en el emocionante 
-                        campo del desarrollo web y de aplicaciones.
-                    </p>
+        <>
+            <div className='ContentProyects'>
+                <Return/>
+                <MisRedes/>
+                <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
+                <div className="Proyects">
+                    <div className="ContentDescription">
+                        <p>
+                            Explora una muestra diversa de mis proyectos que 
+                            abarcan creatividad, innovación y soluciones. Cada 
+                            proyecto es un testimonio de mi pasión por enfrentar 
+                            desafíos y transformar ideas en realidad.
+                        </p>
+                    </div>
+                    <div className="ContentCards">
+                        <div className='card-container'>
+                            <Cards title="Api_StarWars"
+                                description="Diseñé un sitio web 
+                                dedicado al universo de Star Wars, 
+                                que ofrece información sobre los personajes 
+                                y planetas de esta legendaria saga."
+                                etiqueta1="JavaScript" etiqueta2="React"
+                                github={ApiStarWars}
+                                img1={Foto1S} img2={Foto2S} img3={Foto3S} img4={Foto4S}
+                            />
+                        </div>
+                        <div>
+                            <Cards title="BonAppetit"
+                                description="Diseñé un sitio web 
+                                dedicado al universo de Star Wars, 
+                                que ofrece información sobre los personajes 
+                                y planetas de esta legendaria saga."
+                                etiqueta1="PHP" etiqueta2="JavaScript" etiqueta3="Hack"
+                                github={BonAppetit}
+                                img1={Foto1B} img2={Foto2B} img3={Foto3B} img4={Foto4B}
+                            />
+                        </div>
+                        <div>    
+                            <Cards title="PelisBro"
+                                description="Este proyecto aun se encuentra
+                                en desarrollo, muy pronto esta en linea y funcionando."
+                                etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
+                            />
+                        </div>
+                    </div>
                 </div>
-                <div className="ContentCards">
-                    <Cards title="Api_StarWars"
-                        description="Diseñé un sitio web 
-                        dedicado al universo de Star Wars, 
-                        que ofrece información sobre los personajes 
-                        y planetas de esta legendaria saga."
-                        etiqueta1="" etiqueta2="" etiqueta3=""
-                        github={ApiStarWars}
-                    />
-                    <Cards title="BonAppetit"
-                        description="Diseñé un sitio web 
-                        dedicado al universo de Star Wars, 
-                        que ofrece información sobre los personajes 
-                        y planetas de esta legendaria saga."
-                        etiqueta1="" etiqueta2="" etiqueta3=""
-                        github={BonAppetit}
-                    />
-                    <Cards title="PelisBro"
-                        description="Este proyecto aun se encuentra
-                        en desarrollo, muy pronto esta en linea y funcionando."
-                        etiqueta1="" etiqueta2="" etiqueta3=""
-                        github={PelisBro}
-                    />
-                </div>
+            <AlertModal/>
             </div>
-        </div>
+        </>
     )
 }
