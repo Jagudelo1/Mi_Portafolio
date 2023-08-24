@@ -7,7 +7,7 @@
     width: 80%;
 }
 
-.ContainerContact h1{
+.ContainerContact, .Content_Title{
     color: #fff;
     font-weight: 700;
     font-size: 50px;
@@ -44,7 +44,7 @@
     display: flex;
 }
 
-.ContentListRedes h3{
+.ContentListRedes, .ContentRedes{
     color: #fff;
 }
 
@@ -75,15 +75,15 @@
 }
 
 @media (max-width: 541px){
-    .ContainerContact h1{
+    .ContainerContact .Content_Title{
         font-size: 30px;
     }
 
-    .Contact p, span{
+    .Contact, .ContactCorreo, .ContactSpan{
         font-size: 15px;
     }
 
-    .ContentListRedes h3{
+    .ContentListRedes, .ContentRedes{
         font-size: 18px;
     }
 

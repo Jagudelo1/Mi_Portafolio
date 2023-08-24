@@ -10,14 +10,14 @@ export function Contact() {
         <Fade>
             <Return/>
             <section className='ContainerContact'>
-                <h1>Contactame</h1><hr />
+                <h1 className='Content_Title'>Contactame</h1><hr />
                 <div className='ContentContact'>    
                     <div className='Contact'>
                         <p className='ContactCorreo'>Correo:</p>
                         <span className='ContactSpan'>juan.agudelo.aldana@gmail.com</span>
                     </div>
                     <div className='ContentListRedes'>
-                        <h3>Redes Sociales</h3>
+                        <h3 className='ContentRedes'>Redes Sociales</h3>
                         <ul>
                             <li>
                                 <a href="https://www.instagram.com/jagudelo0610/" target="_blank">
