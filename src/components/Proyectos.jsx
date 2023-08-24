@@ -13,7 +13,10 @@ import Foto1B from '../assets/BonAppetit/1.jpeg';
 import Foto2B from '../assets/BonAppetit/2.jpeg';
 import Foto3B from '../assets/BonAppetit/3.jpeg';
 import Foto4B from '../assets/BonAppetit/4.jpeg';
+{/*Imagenes del Tercer Proyecto*/}
+import FotoP from '../assets/Not Found.jpg';
 import { AlertModal } from './AlertModal/AlertModal';
+import { Fade } from 'react-awesome-reveal';
 
 export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
@@ -21,7 +24,7 @@ export function Proyectos() {
     // const PelisBro = "https://github.com/Jagudelo1/PelisBro";
 
     return(
-        <>
+        <Fade>
             <div className='ContentProyects'>
                 <Return/>
                 <MisRedes/>
@@ -63,12 +66,13 @@ export function Proyectos() {
                                 description="Este proyecto aun se encuentra
                                 en desarrollo, muy pronto esta en linea y funcionando."
                                 etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
+                                img1={FotoP} img2={FotoP} img3={FotoP} img4={FotoP}
                             />
                         </div>
                     </div>
                 </div>
             <AlertModal/>
             </div>
-        </>
+        </Fade>
     )
 }

@@ -1,0 +1,97 @@
+/*Estilos para el contenedor principal*/
+.ContainerContact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.ContainerContact h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.ContainerContact hr{
+    border-top: 2px solid #fff !important;
+}
+
+/*Estilos para el contenedor hijo*/
+.ContentContact{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estilos de texto de correo electronico y correo*/
+.ContactCorreo{
+    display: flex;
+    flex-direction: row;
+}
+
+.ContactCorreo, .ContactCorreo, .ContactSpan{
+    font-size: 20px;
+    color: #fff;
+}
+
+.ContactCorreo .CorreoSpan{
+    margin-left: 25px;
+}
+
+/*Estilos para los iconos y listado de redes sociales*/
+.ContentListRedes{
+    display: flex;
+}
+
+.ContentListRedes h3{
+    color: #fff;
+}
+
+.ContentListRedes ul li{
+    list-style: none;
+}
+
+.ContentListRedes ul li a{
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ContentListRedes ul li a svg{
+    margin-right: 8px;
+}
+
+@media (max-width: 890px){
+    .ContentContact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContentListRedes{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 541px){
+    .ContainerContact h1{
+        font-size: 30px;
+    }
+
+    .Contact p, span{
+        font-size: 15px;
+    }
+
+    .ContentListRedes h3{
+        font-size: 18px;
+    }
+
+    .ContentListRedes ul li a{
+        font-size: 15px;
+    }
+
+    .ContentListRedes ul li a svg{
+        width: 24px;
+    }
+}
