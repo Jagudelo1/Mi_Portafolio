@@ -28,5 +28,4 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   height: 100vh;
-  overflow-y: hidden !important;
 }
