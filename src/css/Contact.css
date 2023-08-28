@@ -10,7 +10,7 @@
 .ContainerContact, .Content_Title{
     color: #fff;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
@@ -25,18 +25,22 @@
 }
 
 /*Estilos de texto de correo electronico y correo*/
-.ContactCorreo{
+.Contact{
     display: flex;
-    flex-direction: row;
+}
+
+.ContactCorreo{
+    margin-right: 20px;
 }
 
 .ContactCorreo, .ContactCorreo, .ContactSpan{
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
+    text-transform: capitalize;
 }
 
 .ContactCorreo .CorreoSpan{
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 /*Estilos para los iconos y listado de redes sociales*/
@@ -46,6 +50,8 @@
 
 .ContentListRedes, .ContentRedes{
     color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
 .ContentListRedes ul li{
@@ -55,15 +61,16 @@
 .ContentListRedes ul li a{
     text-decoration: none;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
+    text-transform:capitalize;
 }
 
 .ContentListRedes ul li a svg{
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
-@media (max-width: 890px){
+@media (max-width: 675px){
     .ContentContact{
         display: flex;
         flex-direction: column;
@@ -77,6 +84,11 @@
 @media (max-width: 541px){
     .ContainerContact .Content_Title{
         font-size: 30px;
+    }
+
+    .Contact{
+        display: flex;
+        flex-direction: column;
     }
 
     .Contact, .ContactCorreo, .ContactSpan{

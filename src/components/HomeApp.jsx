@@ -13,16 +13,18 @@ export const HomeApp = () => {
 
     return(
         <>
-            {
-            isLoading ? (
-                <div className='LoadingContnet'>
-                    <Loading/>
-                </div>
-            ) : (
-                <div className='Content'>
-                    <Navbar/>
-                </div>
-            )}
+            <div>    
+                {
+                isLoading ? (
+                    <div className='LoadingContnet'>
+                        <Loading/>
+                    </div>
+                ) : (
+                    <div className='Content'>
+                        <Navbar/>
+                    </div>
+                )}
+            </div>
         </>
     )
 }

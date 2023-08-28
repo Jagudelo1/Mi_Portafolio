@@ -24,55 +24,57 @@ export function Proyectos() {
     // const PelisBro = "https://github.com/Jagudelo1/PelisBro";
 
     return(
-        <Fade>
-            <div className='ContentProyects'>
-                <Return/>
-                <MisRedes/>
-                <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
-                <div className="Proyects">
-                    <div className="ContentDescription">
-                        <p>
-                            Explora una muestra diversa de mis proyectos que 
-                            abarcan creatividad, innovación y soluciones. Cada 
-                            proyecto es un testimonio de mi pasión por enfrentar 
-                            desafíos y transformar ideas en realidad.
-                        </p>
+        <>
+            <Fade>
+                <div className='ContentProyects'>
+                    <Return/>
+                    <MisRedes/>
+                    <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
+                    <div className="Proyects">
+                        <div className="ContentDescription">
+                            <p>
+                                Explora una muestra diversa de mis proyectos que 
+                                abarcan creatividad, innovación y soluciones. Cada 
+                                proyecto es un testimonio de mi pasión por enfrentar 
+                                desafíos y transformar ideas en realidad.
+                            </p>
+                        </div>
+                        <div className="ContentCards">
+                            <div className='card-container'>
+                                <Cards title="Api_StarWars"
+                                    description="Diseñé un sitio web 
+                                    dedicado al universo de Star Wars, 
+                                    que ofrece información sobre los personajes 
+                                    y planetas de esta legendaria saga."
+                                    etiqueta1="JavaScript" etiqueta2="React"
+                                    github={ApiStarWars}
+                                    img1={Foto1S} img2={Foto2S} img3={Foto3S} img4={Foto4S}
+                                />
+                            </div>
+                            <div>
+                                <Cards title="BonAppetit"
+                                    description="Diseñé un sitio web 
+                                    dedicado al universo de Star Wars, 
+                                    que ofrece información sobre los personajes 
+                                    y planetas de esta legendaria saga."
+                                    etiqueta1="PHP" etiqueta2="JavaScript" etiqueta3="Hack"
+                                    github={BonAppetit}
+                                    img1={Foto1B} img2={Foto2B} img3={Foto3B} img4={Foto4B}
+                                />
+                            </div>
+                            <div>    
+                                <Cards title="PelisBro"
+                                    description="Este proyecto aun se encuentra
+                                    en desarrollo, muy pronto esta en linea y funcionando."
+                                    etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
+                                    img1={FotoP} img2={FotoP} img3={FotoP} img4={FotoP}
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div className="ContentCards">
-                        <div className='card-container'>
-                            <Cards title="Api_StarWars"
-                                description="Diseñé un sitio web 
-                                dedicado al universo de Star Wars, 
-                                que ofrece información sobre los personajes 
-                                y planetas de esta legendaria saga."
-                                etiqueta1="JavaScript" etiqueta2="React"
-                                github={ApiStarWars}
-                                img1={Foto1S} img2={Foto2S} img3={Foto3S} img4={Foto4S}
-                            />
-                        </div>
-                        <div>
-                            <Cards title="BonAppetit"
-                                description="Diseñé un sitio web 
-                                dedicado al universo de Star Wars, 
-                                que ofrece información sobre los personajes 
-                                y planetas de esta legendaria saga."
-                                etiqueta1="PHP" etiqueta2="JavaScript" etiqueta3="Hack"
-                                github={BonAppetit}
-                                img1={Foto1B} img2={Foto2B} img3={Foto3B} img4={Foto4B}
-                            />
-                        </div>
-                        <div>    
-                            <Cards title="PelisBro"
-                                description="Este proyecto aun se encuentra
-                                en desarrollo, muy pronto esta en linea y funcionando."
-                                etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
-                                img1={FotoP} img2={FotoP} img3={FotoP} img4={FotoP}
-                            />
-                        </div>
-                    </div>
+                <AlertModal/>
                 </div>
-            <AlertModal/>
-            </div>
-        </Fade>
+            </Fade>
+        </>
     )
 }
