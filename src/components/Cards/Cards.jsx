@@ -9,21 +9,29 @@ import Modal from 'react-bootstrap/Modal';
 import { Carousel } from "react-bootstrap";
 
 export const Cards = ({title, description, 
-                       etiqueta1, etiqueta2, etiqueta3, 
-                       github, img1, img2, img3, img4}) => {
+                       etiqueta1, etiqueta2, 
+                       etiqueta3, github, 
+                       img1, img2, img3, img4}) => {
     
     const [index, setIndex] = useState(0);
+    const [fullscreen, setFullscreen] = useState(true);
+    const [show, setShow] = useState(false);
+    const [showAlert, setShowAlert ] = useState(false);
+    const [showD, setShowD] = useState(true);
+    const handleCloseD = () => setShow(false);
+    const handleShowD = () => setShowD(true);
 
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
                     
-    const [fullscreen, setFullscreen] = useState(true);
-    const [show, setShow] = useState(false);
-                    
     function handleShow(breakpoint) {
         setFullscreen(breakpoint);
-        setShow(true);
+        if (window.innerWidth <= 500) {
+            setShowAlert(true);
+        }else{
+            setShow(true);
+        }
     }
     return(
         <>
@@ -55,7 +63,7 @@ export const Cards = ({title, description,
                     </Button>
                 </div>
                 <Button 
-                    onClick={() => setShow(true)} 
+                    onClick={() => handleShow(true)} 
                     className='ContainerButton'
                 >
                     Capturas
@@ -88,6 +96,15 @@ export const Cards = ({title, description,
                     </Modal.Body>
                 </Modal>
             </Card>
+            {showAlert && (
+                <div
+                    className="modal show ModalAlert"
+                    style={{ display: 'block', position: 'initial'}}>
+                        <h1>
+                            Para visualizar mejor las imágenes, gire el teléfono.
+                        </h1>
+                </div>
+            )}
         </>
     )
 }
