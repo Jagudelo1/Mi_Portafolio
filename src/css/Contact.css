@@ -77,10 +77,6 @@
         flex-direction: column;
     }
 
-    .ContentListRedes{
-        margin-top: 0;
-    }
-
     .ContentListRedes ul li a{
         margin: 0;
     }
