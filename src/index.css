@@ -23,3 +23,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #888;
 }
+
+.ContentNav{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}

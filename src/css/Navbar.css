@@ -1,11 +1,9 @@
 /*---------- Estilos del Contenedor del Menu de Navegacion y del Boton ----------*/
-.Container_Navbar{
+/* .ContentNavbar{
     display: flex;
-    justify-content: left;
     align-items: center;
-    align-content: center;
     height: 100vh;
-}
+} */
 
 .Container_Navbar button{
     color: #fff;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Loading } from "./Loading/Loading";
 import { Navbar } from "./Navbar/Navbar";
+import '../index.css';
 
 export const HomeApp = () => {
     const [ isLoading, setIsLoading ] = useState(true);
@@ -12,19 +13,17 @@ export const HomeApp = () => {
     }, []);
 
     return(
-        <>
-            <div>    
-                {
+        <div>    
+            {
                 isLoading ? (
-                    <div className='LoadingContnet'>
-                        <Loading/>
-                    </div>
+                <div>
+                    <Loading/>
+                </div>
                 ) : (
-                    <div className='Content'>
-                        <Navbar/>
-                    </div>
-                )}
-            </div>
-        </>
+                <div  className="ContentNav">
+                    <Navbar/>
+                </div>
+            )}
+        </div>
     )
 }
