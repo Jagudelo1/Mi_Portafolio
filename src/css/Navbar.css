@@ -3,7 +3,8 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 93vh;
+    align-content: center;
+    height: 100vh;
 }
 
 .Container_Navbar button{
