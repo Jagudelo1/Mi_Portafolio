@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Fade, Flip, Zoom } from "react-awesome-reveal";
 import { MisRedes } from "./MisRedes/MisRedes";
 import { Footer } from "./Footer/Footer";
+import { VolverMenu } from "./Return/VolverMenu";
 
 export function About () {
     return(
@@ -38,6 +39,7 @@ export function About () {
                         </p>
                     </div>
                 </Fade>
+                <VolverMenu/>
                 <Footer/>
             </div>
         </>

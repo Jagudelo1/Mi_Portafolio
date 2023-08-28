@@ -1,5 +1,7 @@
 .ContentNavbar{
-    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    height: 92vh;
 }
 
 /*---------- Estilos del Contenedor del Menu de Navegacion y del Boton ----------*/
@@ -31,6 +33,12 @@
 
 .Listado_Navbar li a:hover{
     color: #c1c1c1c7;
+}
+
+@media (max-width: 850px){
+    .Listado_Navbar li a{
+        font-size: 10vw;
+    }
 }
 
 /*---------- Estilos Responsives del Listado, la Imagen del menu de Navegacion y el Footer ----------*/

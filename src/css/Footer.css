@@ -1,52 +1,37 @@
 /*---------- Estilos para el Contenedor Principal del Footer ----------*/
-.FooterContainer {
-    display: flex;
-    justify-content: space-between;
-    position: static;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
-
-/*---------- Estilos para el Contenedor Izquierdo del Footer ----------*/
-.LeftFooter{
+.RightContainer{
     position: absolute;
-    bottom: 5%;
-    left: 0;
-    margin-left: 30px;
-    transition: transform 0.5s ease;
-}
-
-.LeftFooter .Menu{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-    background-color: blueviolet;
-    padding: 10px 12px 11px;
-    border-radius: 15px;
-}
-
-.LeftFooter:hover{
-    transform: translateY(-10px);
-    transition: all .5s;
-}
-
-.LeftFooter .Menu:hover{
-    color: #c4c4c4;
-    background-color: rgb(119, 8, 222);
-    transition: all .5s;
+    bottom: 1%;
+    right: 3%;
+    overflow-y: hidden;
 }
 
 /*---------- Estilos para el Contenedor Derecho del Footer ----------*/
-.RightFooter{
-    position: absolute;
-    bottom: 2.5%;
-    right: 0;
-    margin-right: 30px;
+.RightFooter p{
+    color: #fff;
+    font-weight: 600;
 }
 
-.RightFooter .CopyFooter{
+/*---------- Estilos para el Contenedor Izquierdo del Footer ----------*/
+.LeftContainer{
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+}
+
+.LeftFooter{
+    background-color: rgb(0, 0, 255);
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.LeftFooter:hover{
+    background-color: rgb(29, 29, 229);
+    
+}
+
+.LeftFooter a{
+    text-decoration: none;
     color: #fff;
     font-weight: 600;
 }

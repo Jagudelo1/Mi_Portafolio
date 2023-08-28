@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { Loading } from "./Loading/Loading";
 import { Navbar } from "./Navbar/Navbar";
 import '../index.css';
+import { MisRedes } from "./MisRedes/MisRedes";
+import { Footer } from "./Footer/Footer";
 
 export const HomeApp = () => {
     const [ isLoading, setIsLoading ] = useState(true);
@@ -13,7 +15,8 @@ export const HomeApp = () => {
     }, []);
 
     return(
-        <div>    
+        <div>
+            <MisRedes/>
             {
                 isLoading ? (
                 <div>
@@ -24,6 +27,7 @@ export const HomeApp = () => {
                     <Navbar/>
                 </div>
             )}
+            <Footer/>
         </div>
     )
 }

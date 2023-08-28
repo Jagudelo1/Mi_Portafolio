@@ -2,12 +2,13 @@ import React from "react";
 import '../../css/Navbar.css';
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
-import { MisRedes } from '../MisRedes/MisRedes';
+import { MisRedes } from "../MisRedes/MisRedes";
 import { Footer } from "../Footer/Footer";
 
 export function Navbar() {
     return(
         <div className="ContentNavbar">
+            <MisRedes/>
             <Fade className="Container_Navbar">
                 <nav className="Navbar">
                     <ul className="Listado_Navbar">
@@ -29,7 +30,6 @@ export function Navbar() {
                     </ul>
                 </nav>
             </Fade>
-            <MisRedes/>
             <Footer/>
         </div>
     )

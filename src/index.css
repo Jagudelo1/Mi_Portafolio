@@ -7,6 +7,7 @@ body{
   background-size: cover;
   background-position: center;
   height: 100%;
+  width: 100%;
   background-attachment: fixed;
   font-family: Roboto !important;
 }
@@ -27,5 +28,5 @@ body::-webkit-scrollbar-thumb {
 .ContentNav{
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 92vh;
 }
