@@ -15,7 +15,6 @@ import Foto3B from '../assets/BonAppetit/3.jpeg';
 import Foto4B from '../assets/BonAppetit/4.jpeg';
 {/*Imagenes del Tercer Proyecto*/}
 import FotoP from '../assets/Not Found.jpg';
-import { AlertModal } from './AlertModal/AlertModal';
 import { Fade } from 'react-awesome-reveal';
 
 export function Proyectos() {
@@ -72,7 +71,6 @@ export function Proyectos() {
                             </div>
                         </div>
                     </div>
-                <AlertModal/>
                 </div>
             </Fade>
         </>
