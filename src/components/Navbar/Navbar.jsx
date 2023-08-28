@@ -15,7 +15,7 @@ export function Navbar() {
                             <ul className="Listado_Navbar">
                                 <li>
                                     <Link to='/Sobre_Mi'>
-                                        <Fade cascade damping={0.1}>Sobre_Mi</Fade>
+                                        <Fade cascade damping={0.1}>Sobre Mi</Fade>
                                     </Link>
                                 </li>
                                 <li>
