@@ -83,6 +83,10 @@
         margin-bottom: 0;
     }
 
+    .ContainerCards:last-child{
+        margin-bottom: 20px;
+    }
+
     .accordion-button{
         width: 120px !important;
         padding: 8px 15px !important;
