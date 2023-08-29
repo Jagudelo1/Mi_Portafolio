@@ -56,7 +56,20 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-row-gap: 40px;
-        height: auto;
+        height: 300px;
+        overflow-y: auto;
+    }
+
+    .ContentCards::-webkit-scrollbar {
+        width: 4px;
+    }
+      
+    .ContentCards::-webkit-scrollbar-track { 
+      background-color: #fff;
+    }
+      
+    .ContentCards::-webkit-scrollbar-thumb {
+      background-color: #888;
     }
 }
 

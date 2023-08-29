@@ -52,10 +52,12 @@ export function Proyectos() {
                             </div>
                             <div>
                                 <Cards title="BonAppetit"
-                                    description="Diseñé un sitio web 
-                                    dedicado al universo de Star Wars, 
-                                    que ofrece información sobre los personajes 
-                                    y planetas de esta legendaria saga."
+                                    description="Junto a tres compañeros de clase, 
+                                    desarrollamos una aplicación web de reservas para 
+                                    mesas, el usuario creaba su cuenta y posteriormente
+                                    podia reservar una mesa. La plataforma incluía un módulo de 
+                                    administrador para crear nuevos platillos, ver reseñas 
+                                    y gestionar usuarios."
                                     etiqueta1="PHP" etiqueta2="JavaScript" etiqueta3="Hack"
                                     github={BonAppetit}
                                     img1={Foto1B} img2={Foto2B} img3={Foto3B} img4={Foto4B}
