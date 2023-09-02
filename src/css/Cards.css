@@ -120,4 +120,9 @@
     }
 }
 
-/* <------------------- Estilos para la modal de alerta -------------------> */
+/* <------------------- Estilos para el mensaje de sugerencia -------------------> */
+.Mensaje{
+    color: red;
+    font-weight: 700;
+    margin-top: 15px;
+}

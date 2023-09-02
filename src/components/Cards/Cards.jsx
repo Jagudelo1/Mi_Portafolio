@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../../css/Cards.css'; {/*Estilos para la cartas*/}
 import '../../css/ButtonModal.css'; {/*Estilos para la modal*/}
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import { AiFillGithub } from "react-icons/ai";
+import { CgDanger } from 'react-icons/cg'
 import Modal from 'react-bootstrap/Modal';
 import { Carousel } from "react-bootstrap";
 
@@ -15,24 +16,33 @@ export const Cards = ({title, description,
     
     const [index, setIndex] = useState(0);
     const [fullscreen, setFullscreen] = useState(true);
+    
+    const [ showMensaje, setShowMensaje ] = useState(window.innerWidth <= 500);
+    const [ showModal, setShowModal ] = useState(false);
+
+    useEffect(() => {
+        function handleResize(){
+            if (window.innerWidth <= 500){
+                setShowMensaje(true);
+            } else{
+                setShowMensaje(false);
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return() => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    
     const [show, setShow] = useState(false);
-    const [showAlert, setShowAlert ] = useState(false);
-    const [showD, setShowD] = useState(true);
-    const handleCloseD = () => setShow(false);
-    const handleShowD = () => setShowD(true);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
-                    
-    function handleShow(breakpoint) {
-        setFullscreen(breakpoint);
-        if (window.innerWidth <= 500) {
-            setShowAlert(true);
-        }else{
-            setShow(true);
-        }
-    }
     return(
         <>
             <Card style={{ width: 'auto' }} className="ContainerCards">
@@ -62,21 +72,25 @@ export const Cards = ({title, description,
                         </a>
                     </Button>
                 </div>
-                <Button 
-                    onClick={() => handleShow(true)} 
-                    className='ContainerButton'
-                >
+                {showMensaje && (
+                    <div className='Mensaje'>
+                       <CgDanger/> ¡Para visualizar mejor las 
+                        imagenes gire su dispositivo 
+                        movil o tableta! <CgDanger/>
+                    </div>
+                )}
+                <Button className='ContainerButton'
+                        onClick={() => setShowModal(true)}>
                     Capturas
                 </Button>
-                <Modal className='ModalContent'
-                    show={show} 
-                    fullscreen={fullscreen} 
-                    onHide={() => setShow(false)}
-                    dialogClassName="modal-90w"
-                    aria-labelledby="example-custom-modal-styling-title">
+
+                <Modal  show={showModal} onHide={() => setShowModal(false)}
+                        className='ModalContent'
+                        dialogClassName="modal-90w"
+                        fullscreen={fullscreen}>
                     <Modal.Header closeButton>
                     </Modal.Header>
-                    <Modal.Body className='BodyModal'>
+                    <Modal.Body>
                         <div className="Content_Carousel">
                             <Carousel activeIndex={index} onSelect={handleSelect}>
                                 <Carousel.Item>
@@ -96,15 +110,6 @@ export const Cards = ({title, description,
                     </Modal.Body>
                 </Modal>
             </Card>
-            {showAlert && (
-                <div
-                    className="modal show ModalAlert"
-                    style={{ display: 'block', position: 'initial'}}>
-                        <h1>
-                            Para visualizar mejor las imágenes, gire el teléfono.
-                        </h1>
-                </div>
-            )}
         </>
     )
 }
