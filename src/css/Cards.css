@@ -24,11 +24,40 @@
     color: #fff !important;
 }
 
+.DescriptionCard{
+    height: 95px;
+    overflow-y: auto;
+}
+
+.DescriptionCard::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.DescriptionCard::-webkit-scrollbar-track { 
+  background-color: #fff;
+}
+  
+.DescriptionCard::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
 /* <-------------------- Estilos para el Contenedor Principal del Acordeon --------------------> */
 .ContentInfo{
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
+}
+
+@media (max-width: 360px){
+    .ContentInfo{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .ButonA{
+        margin-top: 15px;
+        width: 53%;
+    }
 }
 
 /* <-------------------- Estilos para el Contenedor del acordeon --------------------> */
@@ -68,7 +97,6 @@
     border: 0 !important;
     color: #000 !important;
     background-color: #fff !important;
-    height: 36px;
 }
 
 .ButonA a{
@@ -116,7 +144,7 @@
 
 @media (min-width: 1364px){
     .ContentAccordion{
-        width: 30% !important;
+        width: 40% !important;
     }
 }
 

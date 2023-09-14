@@ -1,12 +1,13 @@
-.ContentProyects{
-    margin-bottom: 50px;
-    height: 100%;
+.ContentCards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 40px;
 }
 
-.Proyects{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    margin: 40px;
+@media (max-width: 1220px){
+    .ContentCards{
+        grid-template-columns: auto auto;
+    }
 }
 
 .TitleProyect{
@@ -46,33 +47,7 @@
     }
 }
 
-@media (max-width: 1126px){
-    .Proyects{
-        grid-template-columns: auto !important;
-        margin: 0 !important;
-    }
-
-    .ContentCards{
-        display: grid;
-        grid-template-columns: auto auto;
-        height: 280px;
-        overflow-y: auto;
-    }
-
-    .ContentCards::-webkit-scrollbar {
-        width: 4px;
-    }
-      
-    .ContentCards::-webkit-scrollbar-track { 
-      background-color: #fff;
-    }
-      
-    .ContentCards::-webkit-scrollbar-thumb {
-      background-color: #888;
-    }
-}
-
-@media (max-width: 760px){
+@media (max-width: 840px){
     .ContentCards{
         display: grid;
         grid-template-columns: auto !important;
@@ -85,11 +60,6 @@
     .ContentCards{
         grid-template-columns: auto !important;
         width: 100%;
-    }
-
-    .ContentCards{
-        height: 350px;
-        overflow-y: auto;
     }
 }
 
