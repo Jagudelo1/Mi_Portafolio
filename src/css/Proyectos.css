@@ -30,7 +30,7 @@
 
 @media (min-width: 1126px){
     .ContentCards{
-        height: 370px;
+        height: 380px;
         overflow-y: auto;
     }
 
