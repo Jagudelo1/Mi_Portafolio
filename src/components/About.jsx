@@ -28,14 +28,14 @@ export function About () {
                     <div className="TextInfoAbout">
                         <p>
                             Soy Juan David Agudelo 
-                            desarrollador Frontend junior con sede en Florida, Valle del Cauca, Colombia.
+                            programador junior con sede en Florida, Valle del Cauca, Colombia.
                             He desarrollado proyectos los cuales me han ayudado a mejorar mis conocimientos,
                             he diseñado proyectos desde un restaurante con sistema de reservas hasta el uso
                             de APIS en React.
                             <br/><br/>
                             Me apasionan la programación, me encanta el diseño de interfases interactivas y el
                             constante aprendizaje para llegar hacer mejor y aportar mucho más al mundo
-                            de la programación Frontend.
+                            de la programación.
                         </p>
                     </div>
                 </Fade>
