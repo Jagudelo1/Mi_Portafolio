@@ -86,4 +86,16 @@
         grid-template-columns: auto !important;
         width: 100%;
     }
+
+    .ContentCards{
+        height: 350px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 400px){
+    .ContentCards{
+        height: 400px;
+        overflow-y: auto;
+    }
 }

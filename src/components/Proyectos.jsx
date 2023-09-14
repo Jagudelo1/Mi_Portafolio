@@ -16,7 +16,6 @@ import Foto4B from '../assets/BonAppetit/4.jpeg';
 {/*Imagenes del Tercer Proyecto*/}
 import FotoP from '../assets/Not Found.jpg';
 import { Fade } from 'react-awesome-reveal';
-import { VolverMenu } from './Return/VolverMenu'
 
 export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
@@ -76,7 +75,6 @@ export function Proyectos() {
                     </div>
                 </div>
             </Fade>
-            <VolverMenu/>
         </>
     )
 }
