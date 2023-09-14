@@ -53,6 +53,8 @@
         grid-template-columns: auto !important;
         margin: 0 auto;
         width: 70%;
+        height: 400px;
+        overflow-y: auto;
     }
 }
 
@@ -60,12 +62,5 @@
     .ContentCards{
         grid-template-columns: auto !important;
         width: 100%;
-    }
-}
-
-@media (max-width: 400px){
-    .ContentCards{
-        height: 400px;
-        overflow-y: auto;
     }
 }
