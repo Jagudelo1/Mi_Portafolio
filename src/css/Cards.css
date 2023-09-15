@@ -44,10 +44,16 @@
 /* <-------------------- Estilos para el link del sitio web de cada proyecto --------------------> */
 .LinkSit{
     position: absolute;
-    top: 7%;
-    left: 5%;
-    text-decoration: none;
+    top: 3%;
+    left: 2%;
+    border: 0 !important;
+    background-color: transparent !important;
+}
+
+.LinkSit a{
     color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 /* <-------------------- Estilos para el Contenedor Principal del Acordeon --------------------> */

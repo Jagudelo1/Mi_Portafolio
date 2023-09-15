@@ -29,6 +29,9 @@ export function Proyectos() {
     // const PelisBro = "https://github.com/Jagudelo1/PelisBro";
     const Error404 = "https://github.com/Jagudelo1/404_Error";
 
+    // Links de los proyectos que tienen sitio web
+    const Error404_Link = "https://404-error-blush.vercel.app/";
+
     return(
         <>
             <Fade>
@@ -75,7 +78,6 @@ export function Proyectos() {
                                     description="Este proyecto aun se encuentra
                                     en desarrollo, muy pronto esta en linea y funcionando."
                                     etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
-                                    img1={FotoP} img2={FotoP} img3={FotoP} img4={FotoP}
                                 />
                             </div>
                             <div>
@@ -83,7 +85,7 @@ export function Proyectos() {
                                 description="Este sitio web lo construí para practicar el 
                                 HTML y CSS con un poco de JavaScript."
                                 etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
-                                github={Error404}
+                                github={Error404} link={Error404_Link}
                                 img1={Foto1E} img2={Foto2E} img3={Foto3E} img4={Foto4E}
                                 />
                             </div>

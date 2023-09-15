@@ -11,7 +11,7 @@ import { Carousel } from "react-bootstrap";
 
 export const Cards = ({title, description, 
                        etiqueta1, etiqueta2, 
-                       etiqueta3, github, 
+                       etiqueta3, github, link, 
                        img1, img2, img3, img4}) => {
     
     const [index, setIndex] = useState(0);
@@ -43,6 +43,8 @@ export const Cards = ({title, description,
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
+
+    const hasImages = img1 || img2 || img3 || img4;
     return(
         <>
             <Card style={{ width: 'auto' }} className="ContainerCards">
@@ -54,9 +56,15 @@ export const Cards = ({title, description,
                         {description}
                     </Card.Text>
                 </Card.Body>
-                <a href={github} target='_blank' className='LinkSit'>
-                    Link
-                </a>
+                <div>
+                    {link && (
+                        <Button className='LinkSit'>
+                        <a href={link} target='_blank'>
+                            Link
+                        </a>
+                        </Button>
+                    )}
+                </div>
                 <div className='ContentInfo'>
                     <Accordion style={{width: '45%'}} className='ContentAccordion'>
                         <Accordion.Item eventKey="0">
@@ -82,36 +90,48 @@ export const Cards = ({title, description,
                         movil o tableta! <CgDanger/>
                     </div>
                 )}
-                <Button className='ContainerButton'
-                        onClick={() => setShowModal(true)}>
-                    Capturas
-                </Button>
-
-                <Modal  show={showModal} onHide={() => setShowModal(false)}
+                <div>
+                    {hasImages && (
+                        <Button className='ContainerButton' onClick={() => setShowModal(true)}>
+                        Capturas
+                        </Button>
+                    )}
+                    <Modal
+                        show={showModal}
+                        onHide={() => setShowModal(false)}
                         className='ModalContent'
-                        dialogClassName="modal-90w"
-                        fullscreen={fullscreen}>
-                    <Modal.Header closeButton>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div className="Content_Carousel">
+                        dialogClassName='modal-90w'
+                        fullscreen={fullscreen}
+                    >
+                        <Modal.Header closeButton></Modal.Header>
+                        <Modal.Body>
+                        <div className='Content_Carousel'>
                             <Carousel activeIndex={index} onSelect={handleSelect}>
+                            {img1 && (
                                 <Carousel.Item>
-                                    <img src={img1} />
+                                <img src={img1} />
                                 </Carousel.Item>
+                            )}
+                            {img2 && (
                                 <Carousel.Item>
-                                    <img src={img2} />
+                                <img src={img2} />
                                 </Carousel.Item>
+                            )}
+                            {img3 && (
                                 <Carousel.Item>
-                                    <img src={img3} />
+                                <img src={img3} />
                                 </Carousel.Item>
+                            )}
+                            {img4 && (
                                 <Carousel.Item>
-                                    <img src={img4} />
+                                <img src={img4} />
                                 </Carousel.Item>
+                            )}
                             </Carousel>
                         </div>
-                    </Modal.Body>
-                </Modal>
+                        </Modal.Body>
+                    </Modal>
+                </div>
             </Card>
         </>
     )
