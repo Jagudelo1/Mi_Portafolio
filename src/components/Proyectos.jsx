@@ -31,6 +31,7 @@ export function Proyectos() {
 
     // Links de los proyectos que tienen sitio web
     const Error404_Link = "https://404-error-blush.vercel.app/";
+    const ReactApiStarWars = "https://react-api-starwars.vercel.app/";
 
     return(
         <>
@@ -56,7 +57,7 @@ export function Proyectos() {
                                     que ofrece información sobre los personajes 
                                     y planetas de esta legendaria saga."
                                     etiqueta1="JavaScript" etiqueta2="React"
-                                    github={ApiStarWars}
+                                    github={ApiStarWars} link={ReactApiStarWars}
                                     img1={Foto1S} img2={Foto2S} img3={Foto3S} img4={Foto4S}
                                 />
                             </div>
