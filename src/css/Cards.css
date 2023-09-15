@@ -41,6 +41,15 @@
   background-color: #888;
 }
 
+/* <-------------------- Estilos para el link del sitio web de cada proyecto --------------------> */
+.LinkSit{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    text-decoration: none;
+    color: #fff;
+}
+
 /* <-------------------- Estilos para el Contenedor Principal del Acordeon --------------------> */
 .ContentInfo{
     display: flex;
@@ -148,7 +157,6 @@
         width: 53%;
     }
 }
-
 
 /* <------------------- Estilos para el mensaje de sugerencia -------------------> */
 .Mensaje{

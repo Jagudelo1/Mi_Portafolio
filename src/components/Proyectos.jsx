@@ -14,6 +14,12 @@ import Foto2B from '../assets/BonAppetit/2.jpeg';
 import Foto3B from '../assets/BonAppetit/3.jpeg';
 import Foto4B from '../assets/BonAppetit/4.jpeg';
 {/*Imagenes del Tercer Proyecto*/}
+
+{/*Imagenes del Tercer Proyecto*/}
+import Foto1E from '../assets/404_Error/1.png';
+import Foto2E from '../assets/404_Error/2.png';
+import Foto3E from '../assets/404_Error/3.png';
+import Foto4E from '../assets/404_Error/4.png';
 import FotoP from '../assets/Not Found.jpg';
 import { Fade } from 'react-awesome-reveal';
 
@@ -21,6 +27,7 @@ export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
     const BonAppetit = "https://github.com/Jagudelo1/BonAppetit";
     // const PelisBro = "https://github.com/Jagudelo1/PelisBro";
+    const Error404 = "https://github.com/Jagudelo1/404_Error";
 
     return(
         <>
@@ -69,6 +76,15 @@ export function Proyectos() {
                                     en desarrollo, muy pronto esta en linea y funcionando."
                                     etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
                                     img1={FotoP} img2={FotoP} img3={FotoP} img4={FotoP}
+                                />
+                            </div>
+                            <div>
+                                <Cards title="Error 404"
+                                description="Este sitio web lo construí para practicar el 
+                                HTML y CSS con un poco de JavaScript."
+                                etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
+                                github={Error404}
+                                img1={Foto1E} img2={Foto2E} img3={Foto3E} img4={Foto4E}
                                 />
                             </div>
                         </div>

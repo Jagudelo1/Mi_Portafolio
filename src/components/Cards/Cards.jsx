@@ -54,6 +54,9 @@ export const Cards = ({title, description,
                         {description}
                     </Card.Text>
                 </Card.Body>
+                <a href={github} target='_blank' className='LinkSit'>
+                    Link
+                </a>
                 <div className='ContentInfo'>
                     <Accordion style={{width: '45%'}} className='ContentAccordion'>
                         <Accordion.Item eventKey="0">
