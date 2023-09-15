@@ -31,7 +31,7 @@ export function Proyectos() {
 
     // Links de los proyectos que tienen sitio web
     const Error404_Link = "https://404-error-blush.vercel.app/";
-    // const ReactApiStarWars = "https://react-api-starwars.vercel.app/";
+    // const ReactApiStarWars = "https://api-starwars.vercel.app/";
 
     return(
         <>
