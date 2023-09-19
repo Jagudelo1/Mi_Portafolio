@@ -9,7 +9,7 @@ export function MisRedes () {
         <div className="NavbarSocial">
             <ul className="Social_Img">
                 <li>
-                    <a href="https://www.instagram.com/jagudelo0610/" target="_blank">
+                    <a href="https://www.instagram.com/jagudelo1902/" target="_blank">
                         <AiFillInstagram size={35} color="#9000B2"/>
                     </a>
                 </li>
