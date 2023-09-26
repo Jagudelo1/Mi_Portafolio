@@ -27,7 +27,7 @@ export function About () {
                 <Fade cascade damping={0.3} className="AboutMe">
                     <div className="TextInfoAbout">
                         <p>
-                            Como desarrollador frontend, mi pasión es dar vida a 
+                            Como desarrollador frontend junior, mi pasión es dar vida a 
                             las interfaces de usuario web. Con una sólida formación 
                             en tecnologías como HTML, CSS y JavaScript, tengo la capacidad 
                             de convertir diseños creativos en experiencias interactivas y 
