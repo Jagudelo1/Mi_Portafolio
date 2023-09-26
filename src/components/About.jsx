@@ -22,20 +22,18 @@ export function About () {
                     </Link>
                 </Zoom>
                 <Flip className='AboutText'>
-                    <h2>Sobre Mi</h2>
+                    <h2>Juan David Agudelo</h2>
                 </Flip>
                 <Fade cascade damping={0.3} className="AboutMe">
                     <div className="TextInfoAbout">
                         <p>
-                            Soy Juan David Agudelo 
-                            programador junior con sede en Florida, Valle del Cauca, Colombia.
-                            He desarrollado proyectos los cuales me han ayudado a mejorar mis conocimientos,
-                            he diseñado proyectos desde un restaurante con sistema de reservas hasta el uso
-                            de APIS en React.
-                            <br/><br/>
-                            Me apasionan la programación, me encanta el diseño de interfases interactivas y el
-                            constante aprendizaje para llegar hacer mejor y aportar mucho más al mundo
-                            de la programación.
+                            Como desarrollador frontend, mi pasión es dar vida a 
+                            las interfaces de usuario web. Con una sólida formación 
+                            en tecnologías como HTML, CSS y JavaScript, tengo la capacidad 
+                            de convertir diseños creativos en experiencias interactivas y 
+                            funcionales. <br/><br/>Mi enfoque se centra en la usabilidad, la accesibilidad 
+                            y la optimización de rendimiento para garantizar que los sitios web 
+                            sean atractivos y eficientes.
                         </p>
                     </div>
                 </Fade>
