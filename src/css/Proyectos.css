@@ -6,12 +6,6 @@
     margin-right: 40px;
 }
 
-@media (max-width: 1220px){
-    .ContentCards{
-        grid-template-columns: auto auto;
-    }
-}
-
 .TitleProyect{
     text-align: center;
     text-transform: uppercase;
@@ -30,14 +24,18 @@
     color: #fff;
 }
 
+@media (max-width: 1220px){
+    .ContentCards{
+        grid-template-columns: auto auto;
+    }
+}
+
 @media (max-width: 840px){
     .ContentCards{
         display: grid;
         grid-template-columns: auto !important;
         margin: 0 auto;
-        width: 70%;
-        height: 400px;
-        overflow-y: auto;
+        width: 90%;
     }
     .ContentCards::-webkit-scrollbar {
         width: 4px;
@@ -56,5 +54,9 @@
     .ContentCards{
         grid-template-columns: auto !important;
         width: 100%;
+    }
+
+    .ContentDescription{
+        padding: 25px 25px 0;
     }
 }
