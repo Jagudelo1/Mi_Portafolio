@@ -1,7 +1,9 @@
 .ContentCards{
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 @media (max-width: 1220px){
@@ -20,31 +22,12 @@
 }
 
 .ContentDescription{
-    margin: 0 30px;
+    padding: 25px 65px 0;
 }
 
 .ContentDescription p{
     text-align: justify;
     color: #fff;
-}
-
-@media (min-width: 1126px){
-    .ContentCards{
-        height: 380px;
-        overflow-y: auto;
-    }
-
-    .ContentCards::-webkit-scrollbar {
-        width: 4px;
-    }
-      
-    .ContentCards::-webkit-scrollbar-track { 
-      background-color: #fff;
-    }
-      
-    .ContentCards::-webkit-scrollbar-thumb {
-      background-color: #888;
-    }
 }
 
 @media (max-width: 840px){

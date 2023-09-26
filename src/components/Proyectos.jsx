@@ -25,7 +25,6 @@ import { Fade } from 'react-awesome-reveal';
 export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
     const BonAppetit = "https://github.com/Jagudelo1/BonAppetit";
-    // const PelisBro = "https://github.com/Jagudelo1/PelisBro";
     const Error404 = "https://github.com/Jagudelo1/404_Error";
 
     // Links de los proyectos que tienen sitio web
@@ -34,12 +33,12 @@ export function Proyectos() {
 
     return(
         <>
-            <Fade>
-                <div className='ContentProyects'>
+            <Fade className='ContentProyectos'>
+                <div>
                     <Return/>
                     <MisRedes/>
                     <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
-                    <div className="Proyects">
+                    <div>
                         <div className="ContentDescription">
                             <p>
                                 Explora una muestra diversa de mis proyectos que 
@@ -74,9 +73,9 @@ export function Proyectos() {
                             </div>
                             <div>
                                 <Cards title="Error 404"
-                                description="Este sitio web lo construí para practicar el 
-                                HTML y CSS con un poco de JavaScript."
-                                etiqueta1="HTML5" etiqueta2="CSS3" etiqueta3="JavaScript"
+                                description="Este sitio web lo construí para practicar 
+                                HTML, CSS y JavaScript."
+                                etiqueta1="HTML" etiqueta2="CSS" etiqueta3="JavaScript"
                                 github={Error404} link={Error404_Link}
                                 />
                             </div>
