@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/About.css';
-import Foto from '../assets/Foto.png';
+import Foto from '../assets/Foto.jpg';
 import Logo from '../assets/MiLogo.gif';
 import { Link } from "react-router-dom";
 import { Fade, Flip, Zoom } from "react-awesome-reveal";
