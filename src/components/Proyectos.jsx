@@ -3,29 +3,25 @@ import '../css/Proyectos.css';
 import { Return } from './Return/Return';
 import { MisRedes } from "./MisRedes/MisRedes";
 import { Cards } from "./Cards/Cards";
-{/*Imagenes del Primer Proyecto*/}
-import Foto1S from '../assets/Api_StarWars/1.png';
-import Foto2S from '../assets/Api_StarWars/2.png';
-import Foto3S from '../assets/Api_StarWars/3.png';
-import Foto4S from '../assets/Api_StarWars/4.png';
-{/*Imagenes del Segundo Proyecto*/}
+{/*Imagenes del Proyecto BonAppetit*/}
 import Foto1B from '../assets/BonAppetit/1.jpeg';
 import Foto2B from '../assets/BonAppetit/2.jpeg';
 import Foto3B from '../assets/BonAppetit/3.jpeg';
 import Foto4B from '../assets/BonAppetit/4.jpeg';
-{/*Imagenes del Tercer Proyecto*/}
+{/*Imagenes del Proyecto BonAppetit*/}
+import Fact1 from '../assets/Facturacion/1.png';
+import Fact2 from '../assets/Facturacion/2.png';
+import Fact3 from '../assets/Facturacion/4.png';
+import Fact4 from '../assets/Facturacion/6.png';
 
-{/*Imagenes del Tercer Proyecto*/}
-import Foto1E from '../assets/404_Error/1.png';
-import Foto2E from '../assets/404_Error/2.png';
-import Foto3E from '../assets/404_Error/3.png';
-import Foto4E from '../assets/404_Error/4.png';
+
 import { Fade } from 'react-awesome-reveal';
 
 export function Proyectos() {
     const ApiStarWars = "https://github.com/Jagudelo1/Api_StarWars";
     const BonAppetit = "https://github.com/Jagudelo1/BonAppetit";
     const Error404 = "https://github.com/Jagudelo1/404_Error";
+    const Facturacion = "https://github.com/Jagudelo1/Bethel_App";
 
     // Links de los proyectos que tienen sitio web
     const Error404_Link = "https://404-error-blush.vercel.app/";
@@ -77,6 +73,19 @@ export function Proyectos() {
                                 HTML, CSS y JavaScript."
                                 etiqueta1="HTML" etiqueta2="CSS" etiqueta3="JavaScript"
                                 github={Error404} link={Error404_Link}
+                                />
+                            </div>
+                            <div>
+                                <Cards title="Facturación Papelería"
+                                description="Este aplicativo se diseño con el fin
+                                de realizar facturación de manera las ágil y rápida
+                                a los clientes de una papelería, el cual puede crear y
+                                logear un administrador quien tendrá el permiso de crear
+                                las facturas, editarlas y eliminarlas, a su vez también podrá
+                                imprimirlas con el sello de la empresa."
+                                etiqueta1="React + Vite" etiqueta2="MySQL" etiqueta3="Node"
+                                github={Facturacion}
+                                img1={Fact1} img2={Fact2} img3={Fact3} img4={Fact4}
                                 />
                             </div>
                         </div>
