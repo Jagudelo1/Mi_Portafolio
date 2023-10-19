@@ -21,7 +21,12 @@ export const HomeApp = () => {
                 </div>
                 ) : (
                 <div  className="ContentNav">
-                    <Navbar/>
+                    <div className="ContentNav">
+                        <Navbar/>
+                    </div>
+                    <div className="ContentProyects">
+
+                    </div>
                 </div>
             )}
         </div>
