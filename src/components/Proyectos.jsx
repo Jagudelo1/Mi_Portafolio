@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/Proyectos.css';
 import { Return } from './Return/Return';
-import { MisRedes } from "./MisRedes/MisRedes";
 import { Cards } from "./Cards/Cards";
 {/*Imagenes del Proyecto BonAppetit*/}
 import Foto1B from '../assets/BonAppetit/1.jpeg';
@@ -32,17 +31,8 @@ export function Proyectos() {
             <Fade className='ContentProyectos'>
                 <div>
                     <Return/>
-                    <MisRedes/>
                     <h2 className="TitleProyect">Te Presento Mis Proyectos</h2>
-                    <div>
-                        <div className="ContentDescription">
-                            <p>
-                                Explora una muestra diversa de mis proyectos que 
-                                abarcan creatividad, innovación y soluciones. Cada 
-                                proyecto es un testimonio de mi pasión por enfrentar 
-                                desafíos y transformar ideas en realidad.
-                            </p>
-                        </div>
+                    <div className='ContentText_Cards'>
                         <div className="ContentCards">
                             <div className='card-container'>
                                 <Cards title="Api_StarWars"

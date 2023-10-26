@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display:ital@1&display=swap');
+
 /*---------- Estilos de todo el cuerpo ----------*/
 body{
   display: flex;
   flex-direction: column;
-  background-image: url(./assets/Fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(45deg, #001f3f 20%, #6b0058 90%);
   height: 100%;
   width: 100%;
   background-attachment: fixed;
-  font-family: Roboto !important;
+  font-family: 'Bree Serif', serif !important;
 }
 
 /*----> Estilos para la barra de desplazamiento <----*/
@@ -25,8 +24,152 @@ body::-webkit-scrollbar-thumb {
   background-color: #888;
 }
 
-.ContentNav{
+/* espaciado de la pagina */
+.ContentPort{
+  padding: 50px;
+}
+
+/* ---------------> Estilos para el contenido de "Sobre Mi" <--------------- */
+.section1{
   display: flex;
   align-items: center;
-  height: 92vh;
 }
+
+.section2,
+.section3,
+.section4{
+  margin-top: 30px;
+}
+
+.section2 h2,
+.section3 h2,
+.section4 h2{
+  color: #fff;
+}
+
+.section1 .Foto img{
+  width: 250px;
+  border-radius: 250px;
+}
+
+.section1 .ContentInfo{
+  margin-left: 30px;
+}
+
+.section1 .ContentInfo h2{
+  color: #fff;
+  font-weight: 600;
+}
+
+.section1 .ContentInfo p{
+  color: #fff;
+  text-align: justify;
+}
+
+/* Estilos para el tabs */
+.ContentInfo .Modulo1{
+  display: flex;
+}
+
+.nav{
+  --bs-nav-link-padding-x: 0 !important;
+}
+
+.nav-tabs{
+  --bs-nav-tabs-border-width: 0 !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: transparent !important;
+}
+
+.nav-tabs .nav-link{
+  color: #12ff3e !important;
+  margin-right: 30px !important;
+}
+
+.nav-tabs .nav-link.active{
+  text-decoration: underline !important;
+  color: #0d8323 !important;
+}
+
+/* Estilos del primer modulo de la section1*/
+.Modulo1 ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none  !important;
+  color: #12ff3e;
+  gap: 20px;
+}
+
+/* Estilos del segundo modulo2 de la section1*/
+.Modulo2 ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-bottom: 25px;
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.Modulo2 p span{
+  color: #12ff3e;
+}
+
+/* Estilos del tercer modulo3 de la section1*/
+.Modulo3 ul{
+  list-style: none;
+  padding: 0 !important;
+}
+
+.Modulo3 ul p{
+  color: #fff !important;
+}
+
+.Modulo3 ul p span{
+  color: #12ff3e !important;
+}
+
+/* Estilos adaptativos*/
+@media (max-width: 990px){
+  .section1{
+    display: block;
+  }
+
+  .Foto{
+    margin-bottom: 20px;
+  }
+
+  .section1 .ContentInfo{
+    margin: 0;
+  }
+
+  .section1 .Foto img{
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 520px){
+  .ContentPort{
+    padding: 30px !important;
+  }
+  
+  .Modulo1 ul,
+  .Modulo2 ul,
+  .Modulo3 ul{
+    padding-left: 15px !important;
+  }
+}
+
+@media (max-width: 438px){
+  .Modulo1{
+    display: inline-block !important;
+  }
+
+  .nav-tabs .nav-link{
+    margin-right: 19px !important;
+  }
+}
+
+/* ---------------> Estilos para el contenido de "Mis Servicios" <--------------- */
