@@ -1,0 +1,25 @@
+/*---------- Estilos de los iconos de redes sociales del Componente de MisRedes.jsx ----------*/
+.NavbarSocial{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    overflow: hidden !important;
+}
+
+.Social_Img{
+    display: flex;
+    list-style: none;
+}
+
+.Social_Img li{
+    transition: transform 0.3s ease;
+}
+
+.Social_Img li:hover{
+    transform: translateY(10px);
+    transition: all .5s;
+}
+
+.Social_Img li a{
+    padding-left: 15px;
+}

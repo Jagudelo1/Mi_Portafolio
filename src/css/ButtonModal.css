@@ -52,10 +52,5 @@
     border: 0 !important;
     font-weight: 700 !important;
     border-radius: 0 !important;
-    background-color: transparent !important;
-    transition: all .5s ease-in-out;
-}
-
-.ContainerButton:hover{
-    color: #888 !important;
+    background-color: #000 !important;
 }
