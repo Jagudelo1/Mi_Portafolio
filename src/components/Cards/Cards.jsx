@@ -59,14 +59,14 @@ export const Cards = ({title, description,
                 <div>
                     {link && (
                         <Button className='LinkSit'>
-                        <a href={link} target='_blank'>
-                            Link
-                        </a>
+                            <a href={link} target='_blank'>
+                                Link
+                            </a>
                         </Button>
                     )}
                 </div>
                 <div className='ContentInfo'>
-                    <Accordion style={{width: '45%'}} className='ContentAccordion'>
+                    <Accordion style={{width: '35%'}} className='ContentAccordion'>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Etiquetas</Accordion.Header>
                             <Accordion.Body>
@@ -76,8 +76,8 @@ export const Cards = ({title, description,
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                    <Button className='ButonA'> 
-                        <AiFillGithub size={20} color="black" style={{marginRight: '4px'}}/>
+                    <Button className='ButonG'> 
+                        <AiFillGithub size={20} color="white" style={{marginRight: '4px'}} className='icon'/>
                         <a href={github} target='_blank'>
                             Github
                         </a>
