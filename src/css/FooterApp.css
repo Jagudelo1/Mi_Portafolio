@@ -1,0 +1,10 @@
+.ContainerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerFooter p{
+    margin-top: 10px;
+    color: #fff;
+}

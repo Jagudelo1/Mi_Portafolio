@@ -1,0 +1,86 @@
+.Proyectos{
+    box-shadow: 0 0 5px 4px #000;
+    border-radius: 12px;
+    padding: 20px 30px 10px 30px;
+    transition: all .3s ease-in-out;
+    margin-top: 20px;
+}
+
+.Proyectos:hover{
+    box-shadow: 0 0 5px 6px #000;
+}
+
+.Proyectos h4{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.Proyectos p{
+    color: #fff;
+    text-align: justify;
+    height: 100px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.Proyectos p::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.Proyectos p::-webkit-scrollbar-track { 
+    background-color: #fff;
+}
+  
+.Proyectos p::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.Links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Links a{
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    color: #12ff3e;
+    transition: all .3s ease-in-out;
+}
+
+.Links a:hover{
+    color: #0d8323;
+}
+
+.Links a .IconGithub{
+    margin-right: 6px;
+}
+
+.ListaLenguajes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ListaLenguajes ul{
+    padding: 0 !important;
+}
+
+.ListaLenguajes ul li{
+    display: inline-block;
+}
+
+@media (max-width: 390px){
+    .Proyectos{
+        width: 93%;
+    }
+}
+
+@media (max-width: 375px){
+    .Proyectos{
+        width: 90%;
+    }
+}
