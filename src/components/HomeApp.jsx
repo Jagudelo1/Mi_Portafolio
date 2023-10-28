@@ -236,16 +236,20 @@ export const HomeApp = () => {
                             </div>
                         </div>
                         <div id="Contácteme" className="section3">
-                            <div className="InfoContact">
-                                <h2>Contácteme<hr /></h2>
-                                <p><BiLogoGmail/> juan.agudelo.aldana@gmail.com</p>
-                                <p><AiFillPhone/> +57 3022742204</p>
-                                <a href="../assets/Currículum.pdf" download="Currículum.pdf">
-                                    Descargar CV
-                                </a>
-                            </div>
-                            <div>
-                                <ContactApp/>
+                            <h2>Contácteme<hr /></h2>
+                            <div className="ContainerInformation">
+                                <div className="InfoContact">
+                                    <p><BiLogoGmail size={27} color="red" title="Gmail"/> juan.agudelo.aldana@gmail.com</p>
+                                    <p><AiFillPhone size={27} color="blue"/> +57 3022742204</p>
+                                    <button className="Button">
+                                        <a href="../assets/Currículum.pdf" download="Currículum.pdf">
+                                            Descargar CV
+                                        </a>
+                                    </button>
+                                </div>
+                                <div className="ContactApp">
+                                    <ContactApp/>
+                                </div>
                             </div>
                         </div>
                         <ScrollUp/>

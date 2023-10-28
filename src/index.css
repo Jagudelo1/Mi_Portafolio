@@ -219,3 +219,41 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ---------------> Estilos para el contenido de "Contactame" section2 <--------------- */
+.ContainerInformation{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding: 20px 40px;
+}
+
+@media (max-width: 980px){
+  .ContainerInformation{
+    grid-template-columns: auto;
+  }
+
+  .ContactApp{
+    margin-top: 30px;
+  }
+}
+
+.InfoContact{
+  color: #fff;
+}
+
+.InfoContact button{
+  border: 0;
+  padding: 8px; 
+  background-color: red;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 2px rgb(174, 1, 1);
+  transition: all .5s ease-in-out;
+}
+
+.InfoContact button:hover{
+  box-shadow: 0 0 2px 1px #000;
+}
+
+.InfoContact a{
+  text-decoration: none;
+  color: #fff;
+}
+
