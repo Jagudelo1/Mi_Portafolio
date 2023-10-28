@@ -242,7 +242,7 @@ export const HomeApp = () => {
                                     <p><BiLogoGmail size={27} color="red" title="Gmail"/> juan.agudelo.aldana@gmail.com</p>
                                     <p><AiFillPhone size={27} color="blue"/> +57 3022742204</p>
                                     <button className="Button">
-                                        <a href="../assets/Currículum.pdf" download="Currículum.pdf">
+                                        <a href="https://drive.google.com/file/d/1PcxuAVaxzhBYcW1sZvmXme1iCmwKj1l0/view?usp=drive_link" download="Currículum.pdf" target="_blank">
                                             Descargar CV
                                         </a>
                                     </button>
