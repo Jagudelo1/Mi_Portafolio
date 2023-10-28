@@ -222,7 +222,7 @@ body::-webkit-scrollbar-thumb {
 .ContainerInformation{
   display: grid;
   grid-template-columns: 35% 65%;
-  padding: 20px 40px;
+  padding: 20px 20px;
 }
 
 @media (max-width: 980px){
@@ -242,9 +242,9 @@ body::-webkit-scrollbar-thumb {
 .InfoContact button{
   border: 0;
   padding: 8px; 
-  background-color: red;
   border-radius: 12px;
-  box-shadow: 0 0 4px 2px rgb(174, 1, 1);
+  background-color: #12ff3e;
+  box-shadow: 0 0 4px 2px #0d8323;
   transition: all .5s ease-in-out;
 }
 

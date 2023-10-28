@@ -37,8 +37,8 @@
     display: block;
     margin: 0 auto;
     border: 0 !important;
-    background-color: red !important;
-    box-shadow: 0 0 4px 2px rgb(174, 1, 1) !important;
+    background-color: #12ff3e !important;
+    box-shadow: 0 0 4px 2px #0d8323 !important;
     transition: all .5s ease-in-out !important;
 }
 
