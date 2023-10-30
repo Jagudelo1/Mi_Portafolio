@@ -9,12 +9,12 @@
     border: 0 !important;
     background-color: transparent !important;
     color: #fff !important;
-    box-shadow: 0 0 5px 3px #000 !important;
+    box-shadow: 0 0 5px 2px #fff !important;
     transition: all .3s ease-in-out !important;
 }
 
 .Formulario .form-control:focus{
-    box-shadow: 0 0 5px 1px #000 !important;
+    box-shadow: 0 0 5px 1px #888888 !important;
 }
 
 .Formulario .form-control::placeholder{
