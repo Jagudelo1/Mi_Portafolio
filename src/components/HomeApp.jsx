@@ -243,7 +243,7 @@ export const HomeApp = () => {
                                     <p><AiFillPhone size={27} color="blue"/> +57 3022742204</p>
                                     <button className="Button">
                                         <a href="https://drive.google.com/file/d/182Ka7ThfnFV8sroi91MVieTUnYzpqfus/view?usp=drive_link" download="Currículum.pdf" target="_blank">
-                                            Descargar CV
+                                            Ver HV
                                         </a>
                                     </button>
                                 </div>
