@@ -46,8 +46,8 @@
     display: block;
     margin: 0 auto;
     border: 0 !important;
-    background-color: #12ff3e !important;
-    box-shadow: 0 0 4px 2px #0d8323 !important;
+    background-color: #ff1212 !important;
+    box-shadow: 0 0 2px 1px #fd3232 !important;
     transition: all .5s ease-in-out !important;
 }
 

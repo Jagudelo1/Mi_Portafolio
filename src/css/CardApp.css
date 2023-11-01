@@ -47,12 +47,12 @@
     display: flex;
     align-items: center;
     text-decoration: none !important;
-    color: #12ff3e;
+    color: #ff1212;
     transition: all .3s ease-in-out;
 }
 
 .Links a:hover{
-    color: #0d8323;
+    color: #a50101;
 }
 
 .Links a .IconGithub{

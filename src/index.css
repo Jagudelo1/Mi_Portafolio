@@ -82,13 +82,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-tabs .nav-link{
-  color: #12ff3e !important;
+  color: #ff1212 !important;
   margin-right: 15px !important;
 }
 
 .nav-tabs .nav-link.active{
   text-decoration: underline !important;
-  color: #0d8323 !important;
+  color: #fd3232 !important;
 }
 
 /* Estilos del primer modulo de la section1*/
@@ -97,7 +97,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: center;
   list-style: none  !important;
-  color: #12ff3e;
+  color: #ff1212;
   gap: 20px;
 }
 
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .Modulo2 p span{
-  color: #12ff3e;
+  color: #ff1212;
 }
 
 /* Estilos del tercer modulo3 de la section1*/
@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .Modulo3 ul p span{
-  color: #12ff3e !important;
+  color: #ff1212 !important;
 }
 
 /* Estilos del cuarto modulo4 de la section1*/
@@ -243,8 +243,8 @@ body::-webkit-scrollbar-thumb {
   border: 0;
   padding: 8px; 
   border-radius: 12px;
-  background-color: #12ff3e;
-  box-shadow: 0 0 4px 2px #0d8323;
+  background-color: #ff1212;
+  box-shadow: 0 0 2px 1px #fd3232;
   transition: all .5s ease-in-out;
 }
 

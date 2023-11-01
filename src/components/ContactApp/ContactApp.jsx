@@ -14,6 +14,11 @@ export function ContactApp() {
     const [message, setMessage] = useState('');
     const [acceptTerms, setAcceptTerms] = useState(false);
 
+    const validateEmail = (email) => {
+        const emailPattern = /^(.+)@(gmail\.com|hotmail\.com|yahoo\.com)$/i;
+        return emailPattern.test(email);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -27,30 +32,17 @@ export function ContactApp() {
             return;
         }
 
-        emailjs.send('service_hyhpiod', 'template_b5w1ile', {
-            from_name: name,
-            from_email: from_email,
-            message: message,
-        }, 'o7ZvxwY6Lz0WruG7j')
-        .then((response) => {
-            console.log('Mensaje enviado con éxito', response);
-
-            // Mostrar una alerta de éxito
-            Swal.fire({
-                icon: 'success',
-                title: '¡Éxito!',
-                text: 'El mensaje se envió con éxito.',
-            });
-        }, (error) => {
-            console.error('Error al enviar el mensaje', error);
-
-            // Mostrar una alerta de error
+        if (!validateEmail(from_email)) {
+            // Mostrar una alerta de error si el correo no cumple con el patrón deseado
             Swal.fire({
                 icon: 'error',
                 title: 'Error',
-                text: 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.',
+                text: 'Ingresa un correo válido',
             });
-        });
+            return;
+        }
+
+        // Resto del código para el envío de correo...
 
         // Limpiar el formulario
         setName('');
@@ -67,7 +59,7 @@ export function ContactApp() {
     return (
         <>
             <div className="ContactForm">
-                <Form className="Formulario">
+                <Form className="Formulario" onSubmit={handleSubmit}>
                     <Form.Group className="mb-3 Nombre">
                         <Form.Control
                             required
@@ -80,7 +72,7 @@ export function ContactApp() {
                     <Form.Group className="mb-3 Correo">
                         <Form.Control
                             required
-                            type="text"
+                            type="email"
                             placeholder="Correo"
                             name="from_email"
                             value={from_email}
@@ -117,7 +109,7 @@ export function ContactApp() {
                     <Button
                         className="ButtonSub"
                         type="submit"
-                        onClick={handleSubmit}>
+                    >
                         Enviar
                     </Button>
                 </Form>

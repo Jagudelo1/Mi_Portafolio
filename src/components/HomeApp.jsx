@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Loading } from "./Loading/Loading";
 import { NavbarApp } from "./Navbar/NavbarApp";
 import { ScrollUp } from "./ScrollUp/ScrollUp";
-import { AiFillStar, AiOutlineStar, AiFillHtml5, AiFillInstagram, AiFillPhone } from 'react-icons/ai'; // Iconos de Estrellas, HTML5 y Instagram
+import { AiFillStar, AiOutlineStar, AiFillHtml5, AiFillInstagram } from 'react-icons/ai'; // Iconos de Estrellas, HTML5 y Instagram
 import { BiSolidStarHalf, BiSolidGraduation, BiCodeAlt, BiLogoCss3, BiLogoGmail } from 'react-icons/bi'; // Iconos de Estrella, Grado, Codigo, CSS3 y Gmail
 import { RiJavascriptFill, RiThreadsFill } from 'react-icons/ri'; // Icono de JavaScript y Threads
 import { TbBrandReactNative } from 'react-icons/tb'; // Icono de ReactNative
@@ -240,7 +240,6 @@ export const HomeApp = () => {
                             <div className="ContainerInformation">
                                 <div className="InfoContact">
                                     <p><BiLogoGmail size={27} color="red" title="Gmail"/> juan.agudelo.aldana@gmail.com</p>
-                                    <p><AiFillPhone size={27} color="blue"/> +57 3022742204</p>
                                     <button className="Button">
                                         <a href="https://drive.google.com/file/d/1UZx40qEzEZQpK98CEOba3OhZJwcN5S2Y/view?usp=drive_link" download="Currículum.pdf" target="_blank">
                                             Ver HV
