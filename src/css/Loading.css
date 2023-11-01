@@ -92,14 +92,14 @@
 }
 
 /*---------- Estilos Responsives del Texto de Cargaen ----------*/
-@media (max-width: 419px) {
+@media (max-width: 419px){
     .TextLoading {
-        top: 68%;
+        top: 72%;
     }
+}
 
-    @media (max-width: 419px){
-        .TextLoading {
-            top: 73%;
-        }
+@media (max-width: 375px) {
+    .TextLoading {
+        top: 75%;
     }
 }
