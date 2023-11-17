@@ -1,0 +1,6 @@
+Bootstrap
+React Icons
+Axios
+Emailjs
+React Router Dom
+SweetAlert 2

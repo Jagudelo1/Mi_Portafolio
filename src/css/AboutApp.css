@@ -1,0 +1,28 @@
+.ContainerAbout{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    color: #fff;
+}
+
+.Foto img{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 250px;
+}
+
+.InfoAbout span{
+    color: #45A6C6;
+}
+
+@media (max-width: 990px){
+    .ContainerAbout{
+        flex-direction: column;
+    }
+
+    .Foto{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

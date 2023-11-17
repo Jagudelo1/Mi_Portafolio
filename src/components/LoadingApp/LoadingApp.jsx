@@ -1,13 +1,13 @@
 import React from "react";
-import Carga from  '../../assets/Loading.gif';
-import '../../css/Loading.css';
 import { Fade } from "react-awesome-reveal";
+import Carga from '../../assets/Loading.gif';
+import '../../css/LoadingApp.css';
 
-export function Loading() {
+export function LoadingApp() {
     return(
-        <div className="ContentContainer">
-            <Fade className="ContentImg">
-                <img src={Carga} alt="Cargando..." />
+        <div className='ContentLoading'>
+            <Fade className="GifLoading">
+                <img src={Carga} alt='Cargando...' />
             </Fade>
             <Fade className="TextLoading">
                 <h2 className='Cargando'>Cargando...</h2>

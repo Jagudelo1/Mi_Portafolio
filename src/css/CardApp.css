@@ -1,86 +1,91 @@
-.Proyectos{
-    box-shadow: 0 0 5px 4px #000;
-    border-radius: 12px;
-    padding: 20px 30px 10px 30px;
-    transition: all .3s ease-in-out;
-    margin-top: 20px;
+.card{
+    border: 0 !important;
+    background-color: transparent !important;
+    box-shadow: 0 0 25px 7px #00000070 !important;
+    border-radius: 12px !important;
+    color: #fff !important;
 }
 
-.Proyectos:hover{
-    box-shadow: 0 0 5px 6px #000;
+.card-body{
+    margin: 20px;
 }
 
-.Proyectos h4{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 15px;
+.card-title{
+    display: flex;
+    align-items: center;
 }
 
-.Proyectos p{
-    color: #fff;
-    text-align: justify;
-    height: 100px;
+.card-text2{
+    height: 120px;
     overflow-y: auto;
-    padding-right: 10px;
+    padding-right: 12px;
+    margin-top: 25px;
 }
 
-.Proyectos p::-webkit-scrollbar {
+.card-text2::-webkit-scrollbar {
     width: 4px;
 }
   
-.Proyectos p::-webkit-scrollbar-track { 
+.card-text2::-webkit-scrollbar-track { 
     background-color: #fff;
 }
   
-.Proyectos p::-webkit-scrollbar-thumb {
-    background-color: #888;
+.card-text2::-webkit-scrollbar-thumb {
+    background-color: #000;
 }
 
-.Links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@media (max-width: 425px){
+    .card-title{
+        font-size: 17px !important;
+    }
 
-.Links a{
-    display: flex;
-    align-items: center;
-    text-decoration: none !important;
-    color: #ff1212;
-    transition: all .3s ease-in-out;
-}
-
-.Links a:hover{
-    color: #a50101;
-}
-
-.Links a .IconGithub{
-    margin-right: 6px;
-}
-
-.ListaLenguajes{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.ListaLenguajes ul{
-    padding: 0 !important;
-}
-
-.ListaLenguajes ul li{
-    display: inline-block;
-}
-
-@media (max-width: 390px){
-    .Proyectos{
-        width: 93%;
+    .card-text{
+        font-size: 15px !important;
     }
 }
 
 @media (max-width: 375px){
-    .Proyectos{
-        width: 90%;
+    .card-title{
+        font-size: 15px !important;
     }
+
+    .card-text{
+        font-size: 14px !important;
+    }
+}
+
+/* Estilos para el componente de CardProyect */
+.Links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Links a{
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 0 20px 5px #00000046;
+    padding: 8px 15px;
+    border-radius: 12px;
+    transition: all .3s ease-in-out;
+}
+
+.Links a:hover{
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 10px 0 #00000046;
+}
+
+.Icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Icons ul{
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.Icons ul li{
+    display: inline-block;
 }

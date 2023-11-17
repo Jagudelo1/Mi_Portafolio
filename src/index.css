@@ -1,259 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display:ital@1&display=swap');
-
-/*---------- Estilos de todo el cuerpo ----------*/
 body{
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(45deg, #001f3f 20%, #6b0058 90%);
-  height: 100vh;
-  width: auto;
-  background-attachment: fixed;
-  font-family: 'Bree Serif', serif !important;
+    background: linear-gradient(45deg, #051b32 20%, #560548 90%) !important;
+    background-attachment: fixed !important;
+    height: 100vh;
+    width: 65%;
+    margin: 0 auto !important;
 }
 
 /*----> Estilos para la barra de desplazamiento <----*/
 body::-webkit-scrollbar {
-  width: 4px;
+    width: 4px;
 }
-
-body::-webkit-scrollbar-track { 
-  background-color: #fff;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #888;
-}
-
-/* espaciado de la pagina */
-.ContentPort{
-  padding: 50px;
-}
-
-/* ---------------> Estilos para el contenido de "Sobre Mi" <--------------- */
-.section1{
-  display: flex;
-  align-items: center;
-}
-
-.section2,
-.section3{
-  margin-top: 30px;
-}
-
-.section2 h2,
-.section3 h2{
-  color: #fff;
-}
-
-.section1 .Foto img{
-  width: 250px;
-  border-radius: 250px;
-}
-
-.section1 .ContentInfo{
-  margin-left: 30px;
-}
-
-.section1 .ContentInfo h2{
-  color: #fff;
-  font-weight: 600;
-}
-
-.section1 .ContentInfo p{
-  color: #fff;
-  text-align: justify;
-}
-
-/* Estilos para el tabs */
-.ContentInfo .Modulo1{
-  display: flex;
-}
-
-.nav{
-  --bs-nav-link-padding-x: 0 !important;
-}
-
-.nav-tabs{
-  --bs-nav-tabs-border-width: 0 !important;
-}
-
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-  background-color: transparent !important;
-}
-
-.nav-tabs .nav-link{
-  color: #ff1212 !important;
-  margin-right: 15px !important;
-}
-
-.nav-tabs .nav-link.active{
-  text-decoration: underline !important;
-  color: #fd3232 !important;
-}
-
-/* Estilos del primer modulo de la section1*/
-.Modulo1 ul li{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none  !important;
-  color: #ff1212;
-  gap: 20px;
-}
-
-
-/* Estilos del segundo modulo2 de la section1*/
-.Modulo2 ul{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  margin-bottom: 25px;
-  list-style: none !important;
-  padding: 0 !important;
-}
-
-.Modulo2 p span{
-  color: #ff1212;
-}
-
-/* Estilos del tercer modulo3 de la section1*/
-.Modulo3 ul{
-  list-style: none;
-  padding: 0 !important;
-}
-
-.Modulo3 ul p{
-  color: #fff !important;
-}
-
-.Modulo3 ul p span{
-  color: #ff1212 !important;
-}
-
-/* Estilos del cuarto modulo4 de la section1*/
-.Modulo4 ul{
-  padding: 0 !important;
-}
-
-.Modulo4 ul li{
-  list-style: none;
-}
-
-.Modulo4 ul li h5{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #fff;
-}
-
-.Modulo4 ul li h5 .IconCode{
-  margin-right: 10px;
-}
-
-/* Estilos del cuarto modulo5 de la section1*/
-.Redes p{
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.Redes p .IconArrow{
-  margin-right: 7px;
-}
-
-.Modulo5 ul li{
-  list-style: none;
-  display: inline-block;
-  margin-right: 10px;
-  transition: transform 0.3s ease-in;
-}
-
-.Modulo5 ul li:hover{
-  transform: translateY(10px)
-}
-
-/* Estilos adaptativos*/
-@media (max-width: 990px){
-  .section1{
-    display: block;
-  }
-
-  .Foto{
-    margin-bottom: 20px;
-  }
-
-  .section1 .ContentInfo{
-    margin: 0;
-  }
-
-  .section1 .Foto img{
-    display: block !important;
-    margin: 0 auto !important;
-  }
-}
-
-@media (max-width: 520px){
-  .ContentPort{
-    padding: 30px !important;
-  }
   
-  .Modulo1 ul,
-  .Modulo2 ul,
-  .Modulo3 ul{
-    padding-left: 0 !important;
-  }
+body::-webkit-scrollbar-track { 
+    background-color: #fff;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #000;
 }
 
-@media (max-width: 438px){
-  .Modulo1{
-    display: inline-block !important;
-  }
+/* Estilos para el componente de HomeApp */
+.Experiencia h2,
+.Proyectos h2{
+    color: #fff;
+    margin-bottom: 20px !important;
+    margin-top: 30px !important;
 }
 
-/* ---------------> Estilos para el contenido de "Mis Proyectos" section2 <--------------- */
-.Proyects{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  column-gap: 25px;
-  row-gap: 10px;
-  margin-top: 20px;
+.Cards1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 20px;
 }
 
-/* ---------------> Estilos para el contenido de "Contactame" section2 <--------------- */
-.ContainerInformation{
-  display: grid;
-  grid-template-columns: 35% 65%;
-  padding: 20px 20px;
+.Cards2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
 }
 
-@media (max-width: 980px){
-  .ContainerInformation{
-    grid-template-columns: auto;
-  }
-
-  .ContactApp{
-    margin-top: 30px;
-  }
+@media (max-width: 2184px){
+    .Cards1{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 20px;
+    }
 }
 
-.InfoContact{
-  color: #fff;
+@media (max-width: 2028px){
+    .Cards2{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 20px;
+    }   
 }
 
-.InfoContact button{
-  border: 0;
-  padding: 8px; 
-  border-radius: 12px;
-  background-color: #ff1212;
-  box-shadow: 0 0 2px 1px #fd3232;
-  transition: all .5s ease-in-out;
+@media (max-width: 1569px){
+    .Cards1,
+    .Cards2{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
 }
 
-.InfoContact button:hover{
-  box-shadow: 0 0 2px 1px #000;
+@media (max-width: 505px){
+    body{
+        width: 80%;
+    }
+
+    .Cards1,
+    .Cards2{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 20px;
+    }
 }
 
-.InfoContact a{
-  text-decoration: none;
-  color: #fff;
+/* Estilo titulo contactame*/
+.Contactame{
+    color: #fff;
+    margin-top: 20px;
 }
 
+.ContainerContact{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 20px;
+}
+
+.InfoContact a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.InfoContact .Contact_Email a:hover{
+    color: rgb(120, 120, 120);
+}
+
+.Curriculum{
+    box-shadow: 0 0 20px 6px #00000074;
+    border-radius: 12px;
+    padding: 10px 15px;
+    width: 80px;
+    transition: all .3s ease-in-out;
+}
+
+.Curriculum:hover{
+    box-shadow: 0 0 25px 2px #00000074;
+}
+
+/* Media Query 1339px*/
+@media (max-width: 1339px){
+    .ContainerContact{
+        grid-template-columns: auto;
+    }
+
+    .ContactApp{
+        margin-top: 20px;
+    }
+}
+
+/* Estilo Footer*/
+.ContainerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerFooter p{
+    margin-top: 40px;
+    color: #fff;
+}
