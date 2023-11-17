@@ -63,7 +63,7 @@
 .Links a{
     text-decoration: none;
     color: #fff;
-    box-shadow: 0 0 20px 5px #00000046;
+    box-shadow: 0 0 10px 5px #fbfbfb34;
     padding: 8px 15px;
     border-radius: 12px;
     transition: all .3s ease-in-out;
@@ -71,7 +71,7 @@
 
 .Links a:hover{
     transition: all .5s ease-in-out;
-    box-shadow: 0 0 10px 0 #00000046;
+    box-shadow: 0 0 5px 2px #fbfbfb10;
 }
 
 .Icons{

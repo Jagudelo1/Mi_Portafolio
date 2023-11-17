@@ -56,13 +56,13 @@
     margin: 0 auto;
     border: 0 !important;
     background-color: transparent !important;
-    box-shadow: 0 0 24px 5px #00000070 !important;
+    box-shadow: 0 0 10px 5px #fbfbfb34 !important;
     transition: all .5s ease-in-out !important;
 }
 
 .Formulario .ButtonSub:hover{
     transition: all .5s ease-in-out !important;
-    box-shadow: 0 0 20px 0 #00000070 !important;
+    box-shadow: 0 0 5px 2px #fbfbfb10 !important;
 }
 
 
