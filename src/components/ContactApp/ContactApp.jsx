@@ -17,15 +17,17 @@ export function ContactApp() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!acceptTerms) {
-            // Mostrar una alerta de error si los términos no se aceptan
+        // Validar que todos los campos estén llenos
+        if (!name || !from_email || !message || !acceptTerms) {
+            // Mostrar una alerta de error si algún campo está vacío
             Swal.fire({
                 icon: 'error',
                 title: 'Error',
-                text: 'Debes aceptar los términos y condiciones.',
+                text: 'Todos los campos son obligatorios. Por favor, completa el formulario.',
             });
             return;
         }
+
         emailjs.send('service_hyhpiod', 'template_b5w1ile', {
             from_name: name,
             from_email: from_email,
@@ -67,14 +69,12 @@ export function ContactApp() {
                 <Form className="Formulario">
                     <Form.Group className="mb-3 Inputs">
                         <Form.Control
-                            required
                             type="text"
                             placeholder="Nombre"
                             name="name"
                             value={name}
                             onChange={(e) => setName(e.target.value)} />
                         <Form.Control
-                            required
                             type="text"
                             placeholder="Correo"
                             name="from_email"
@@ -83,7 +83,6 @@ export function ContactApp() {
                     </Form.Group>
                     <Form.Group className="mb-3 textarea">
                         <Form.Control
-                            required
                             as="textarea"
                             rows={3}
                             placeholder="Comentario"
@@ -93,7 +92,6 @@ export function ContactApp() {
                     </Form.Group>
                     <Form.Group className="mb-3 Checked">
                         <Form.Check
-                            required
                             className="swicht"
                             type="switch"
                             id="custom-switch"
@@ -101,13 +99,13 @@ export function ContactApp() {
                             label="Aceptar términos y condiciones"
                             checked={acceptTerms}
                             onChange={(e) => setAcceptTerms(e.target.checked)} />
-                            <Link to="">
-                                <MdQuiz 
+                        <Link to="">
+                            <MdQuiz 
                                 size={20} 
                                 color="#fff" 
                                 className="info_termins"
                                 onClick={handleShow}/>
-                            </Link>
+                        </Link>
                     </Form.Group>
                     <Button
                         className="ButtonSub"
@@ -170,5 +168,5 @@ export function ContactApp() {
                 </Modal>
             </div>
         </>
-    )
+    );
 }
