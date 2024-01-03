@@ -158,7 +158,7 @@ export function HomeApp() {
                                     <BiLogoGmail size={27} color="red" title="Gmail"/> <a href="mailto:juan.agudelo.aldana@gmail.com">juan.agudelo.aldana@gmail.com</a>
                                 </p>
                                 <p className="Curriculum">
-                                    <a href="https://drive.google.com/file/d/1UZx40qEzEZQpK98CEOba3OhZJwcN5S2Y/view?usp=drive_link" download="Currículum.pdf" target="_blank">
+                                    <a href="https://drive.google.com/file/d/1xQAOrZf9KRIOVwiT4jDBJlbZzAO1M6-m/view?usp=drive_link" download="Currículum.pdf" target="_blank">
                                         Ver CV
                                     </a>
                                 </p>
