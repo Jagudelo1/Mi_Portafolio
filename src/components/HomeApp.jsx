@@ -55,7 +55,7 @@ export function HomeApp() {
                                 <CardApp 
                                     iconTitle={<IoIosPaper/>} 
                                     title="Bethel Papelería"
-                                    subtitle="Agosto 2023 - Actualidad"
+                                    subtitle="Agosto 2023 - Julio 2024"
                                     info="Como desarrollador Frontend en esta
                                     empresa, he desempeñado una función clave 
                                     como encargado del diseño y desarrollo de 
