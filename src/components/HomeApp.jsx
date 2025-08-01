@@ -60,11 +60,7 @@ export function HomeApp() {
                                     empresa, he desempeñado una función clave 
                                     como encargado del diseño y desarrollo de 
                                     un aplicativo local destinado a simplificar 
-                                    y optimizar el proceso de facturación. A lo 
-                                    largo de este proyecto, he trabajado arduamente 
-                                    para crear una herramienta eficaz y fácil de usar 
-                                    que agiliza significativamente la generación de 
-                                    facturas."
+                                    y optimizar el proceso de facturación."
                                 />
                             </div>
                             <div>
